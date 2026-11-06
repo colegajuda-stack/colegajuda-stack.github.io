@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colegajuda — RH e payroll para pequenas empresas</title>
+<meta name="description" content="Apoio de RH e payroll para empresas sem departamento de RH e para gabinetes de contabilidade. Por email, com prazos definidos, sem fidelização.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="icone.png">
+<meta property="og:title" content="Colegajuda — RH e payroll para pequenas empresas">
+<meta property="og:description" content="A retaguarda de RH que a sua empresa não tem. Por email, com prazos definidos, sem fidelização.">
+<meta property="og:image" content="https://colegajuda.pt/icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1e2a38;--blue:#2f5d8a;--green:#1f7a5c;--green-soft:#e6f1ec;--ivory:#f6f4ef;--line:#e3e0d8;--muted:#4b5563;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--navy);font-family:'Source Sans 3',system-ui,sans-serif;font-size:18px;line-height:1.55}
+a{color:var(--blue)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:var(--ivory);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.bar img{height:44px;width:auto;display:block}
+.bar nav{display:flex;gap:22px;font-size:16px}
+.bar nav a{color:var(--navy);text-decoration:none;font-weight:600}
+.bar nav a:hover{color:var(--green)}
+.btn{display:inline-block;background:var(--green);color:var(--white);text-decoration:none;font-weight:700;padding:13px 22px;border-radius:10px}
+.btn:hover{background:#17614a}
+.btn.ghost{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.hero{padding-top:72px;padding-bottom:64px}
+.hero h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(34px,5vw,54px);line-height:1.1;margin:0 0 18px;max-width:780px}
+.hero p{font-size:20px;color:var(--muted);max-width:680px;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+section{padding:56px 0}
+section.alt{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-family:'Fraunces',Georgia,serif;font-size:clamp(26px,3.4vw,36px);line-height:1.2;margin:0 0 10px}
+.lead{color:var(--muted);max-width:720px;margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column}
+section.alt .card{background:var(--ivory)}
+.card h3{margin:0 0 10px;font-size:21px}
+.card ul{margin:0 0 16px;padding-left:20px;color:var(--muted);font-size:16.5px}
+.card li{margin-bottom:6px}
+.price{margin-top:auto;font-weight:700;color:var(--green);font-size:17px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s}
+.step{padding:22px;border-left:4px solid var(--green);background:var(--white);border-radius:0 12px 12px 0}
+.step b{display:block;font-size:19px;margin-bottom:6px}
+.step b::before{counter-increment:s;content:counter(s) ". ";color:var(--green)}
+.step span{color:var(--muted);font-size:16.5px}
+.checks{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px 28px}
+.checks li{padding-left:34px;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:22px;height:22px;border-radius:50%;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.note{background:var(--green-soft);border-radius:14px;padding:24px 26px;max-width:860px}
+.note h3{margin:0 0 8px;font-size:20px}
+.note p{margin:0;color:#24433a}
+.contact{background:var(--navy);color:var(--ivory)}
+.contact h2{color:var(--ivory)}
+.contact p{color:#c9d2dc;max-width:640px}
+.contact .btn{margin-top:8px}
+.mail{font-size:22px;font-weight:700;color:var(--ivory)}
+footer{background:var(--navy);color:#9aa7b5;font-size:14px;padding:22px 0 32px;border-top:1px solid #2c3a4b}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media (max-width:720px){
+  .bar nav{display:none}
+  .bar img{height:38px}
+  .hero{padding-top:48px;padding-bottom:44px}
+  section{padding:44px 0}
+  body{font-size:17px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#topo" aria-label="Colegajuda — início"><img src="logotipo.svg" alt="Colegajuda — RH e payroll para pequenas empresas"></a>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#como">Como funciona</a>
+      <a href="#gabinetes">Gabinetes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+  <div class="wrap hero">
+    <h1>A retaguarda de RH que a sua empresa não tem.</h1>
+    <p>Contratos, faltas, férias, salários e cessações tratados com método — por email, com prazos definidos e sem fidelização. Para empresas de 5 a 50 trabalhadores e para os gabinetes de contabilidade que as acompanham.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:colegajuda@gmail.com?subject=Pedido%20de%20diagn%C3%B3stico%20RH&body=Empresa%3A%20%0AN.%C2%BA%20de%20trabalhadores%3A%20%0AContrato%20coletivo%20(se%20souber)%3A%20">Pedir o diagnóstico</a>
+      <a class="btn ghost" href="#servicos">Ver serviços</a>
+    </div>
+  </div>
+
+  <section class="alt" id="problema">
+    <div class="wrap">
+      <h2>Para quem é</h2>
+      <p class="lead">Empresas sem técnico de RH, onde estes temas ficam com a administrativa, o gerente ou o contabilista — e só se olha para eles quando há um problema.</p>
+      <ul class="checks">
+        <li>Contratos a termo com motivos genéricos, que podem converter-se em sem termo</li>
+        <li>Faltas, férias e trabalho suplementar sem registo nem procedimento</li>
+        <li>Admissões e cessações comunicadas à Segurança Social fora de prazo</li>
+        <li>Formação obrigatória (40 h/ano) por cumprir e por registar</li>
+        <li>Mudanças de cliente ou de serviço sem saber o que acontece aos trabalhadores</li>
+        <li>Tabelas do contrato coletivo desatualizadas no processamento</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="wrap">
+      <h2>Serviços</h2>
+      <p class="lead">Começa com um diagnóstico. Depois, escolhe o nível de apoio que precisa.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Entrada</h3>
+          <ul>
+            <li>Questionário de 20 perguntas sobre a situação de RH</li>
+            <li>Mapa de riscos de 1 página: o que falta, o que está mal, o que é urgente</li>
+            <li>Resolução dos 2 pontos mais urgentes</li>
+          </ul>
+          <div class="price">150–250 €, uma vez</div>
+        </div>
+        <div class="card">
+          <h3>Retaguarda mensal</h3>
+          <ul>
+            <li>Dúvidas por email, resposta em 24–48 h úteis</li>
+            <li>1 procedimento ou minuta-tipo por mês, pela ordem do mapa de riscos</li>
+            <li>Alerta trimestral de alterações legais e de tabelas</li>
+            <li>Processamento de salários (opcional)</li>
+          </ul>
+          <div class="price">90–150 €/mês</div>
+        </div>
+        <div class="card">
+          <h3>À peça</h3>
+          <ul>
+            <li>Dossiers de transmissão de trabalhadores, cessações e processos disciplinares, com factos, documentos e prazos organizados</li>
+            <li>Execução do que for decidido: comunicações, Segurança Social, processamento</li>
+          </ul>
+          <div class="price">60–200 € por trabalho</div>
+        </div>
+        <div class="card">
+          <h3>RH partilhada</h3>
+          <ul>
+            <li>Técnica de RH a tempo parcial (6–8 h/semana), integrada na sua equipa</li>
+            <li>Tudo incluído, sem gestão de prestadores</li>
+          </ul>
+          <div class="price">Valor a combinar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="como">
+    <div class="wrap">
+      <h2>Como funciona</h2>
+      <p class="lead">Tudo por escrito. Uma reunião inicial, presencial ou por vídeo; depois não precisa de marcar nada.</p>
+      <div class="steps">
+        <div class="step"><b>Envia um email</b><span>Com o nome da empresa e o número de trabalhadores.</span></div>
+        <div class="step"><b>Responde ao questionário</b><span>Recebe-o no mesmo dia. 20 perguntas, cerca de 20 minutos.</span></div>
+        <div class="step"><b>Recebe o mapa de riscos</b><span>Em 5 dias úteis, com a ordem de prioridades.</span></div>
+        <div class="step"><b>Tratamos um ponto de cada vez</b><span>Cada procedimento fica escrito e pode ser usado por quem lá estiver.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gabinetes">
+    <div class="wrap">
+      <h2>Para gabinetes de contabilidade</h2>
+      <p class="lead">Ofereça apoio de RH aos seus clientes sem contratar ninguém. Uma retaguarda para a carteira inteira, com a mesma forma de trabalhar: pedidos por email, prazos definidos, procedimentos escritos.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Retaguarda para a carteira</h3>
+          <ul>
+            <li>Dúvidas de RH dos clientes do gabinete respondidas por email</li>
+            <li>Procedimentos e minutas-tipo reutilizáveis</li>
+            <li>Apoio em admissões, cessações e transmissões</li>
+          </ul>
+          <div class="price">300–600 €/mês</div>
+        </div>
+        <div class="card">
+          <h3>Porquê funciona</h3>
+          <ul>
+            <li>O gabinete mantém a relação com o cliente</li>
+            <li>Os temas de RH deixam de ocupar a equipa de contabilidade</li>
+            <li>Sem fidelização: renova-se mês a mês</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="limites">
+    <div class="wrap">
+      <div class="note">
+        <h3>O que fazemos e o que não fazemos</h3>
+        <p>Não damos pareceres jurídicos nem redigimos contratos ou cartas de despedimento para casos concretos — isso é trabalho de advogado ou solicitador. Preparamos o dossier, indicamos o que a lei e o contrato coletivo dizem em geral, e executamos o que o advogado da empresa (ou o nosso parceiro) decidir. Assim a empresa tem os dois lados cobertos sem pagar honorários de advogado por tarefas administrativas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap">
+      <h2>Quem está por trás</h2>
+      <p class="lead">Uma técnica de RH e payroll com mais de 20 anos de experiência em empresas de serviços — contratação, processamento salarial, lei do trabalho e contratos coletivos. Trabalho discreto, por escrito, sem comerciais.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="wrap">
+      <h2>Contacto</h2>
+      <p>Envie o nome da empresa e o número de trabalhadores. O questionário de entrada segue no mesmo dia.</p>
+      <p><a class="mail" href="mailto:colegajuda@gmail.com">colegajuda@gmail.com</a></p>
+      <a class="btn" href="mailto:colegajuda@gmail.com?subject=Pedido%20de%20diagn%C3%B3stico%20RH&body=Empresa%3A%20%0AN.%C2%BA%20de%20trabalhadores%3A%20%0AContrato%20coletivo%20(se%20souber)%3A%20">Pedir o diagnóstico</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Colegajuda · colegajuda.pt</span>
+    <span>Valores sem IVA, quando aplicável · Página informativa, não constitui consulta jurídica · Este site não usa cookies nem recolhe dados</span>
+  </div>
+</footer>
+
+</body>
+</html>
