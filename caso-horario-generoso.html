@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O horário generoso que saiu caro — Colegajuda</title>
+<meta name="description" content="Um patrão quis dar folgas longas à equipa e desenhou uma escala de 3 dias de trabalho e folgas alternadas, com tudo acordado com os trabalhadores. Encontre os «se» e os sinais de alerta, e perceba porque é que as boas intenções podem sair caras.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/source-sans-3-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/source-sans-3-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/source-sans-3-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/fraunces-latin-700-normal.woff2) format('woff2')}
+:root{--navy:#1e2a38;--blue:#2f5d8a;--green:#1f7a5c;--green-soft:#e6f1ec;--ivory:#f6f4ef;--line:#e3e0d8;--muted:#4b5563;--white:#fff;--amber-soft:#fbf1df}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ivory);color:var(--navy);font-family:'Source Sans 3',system-ui,sans-serif;font-size:18px;line-height:1.6}
+a{color:var(--blue)}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:var(--ivory)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.bar img{height:44px;width:auto;display:block}
+.back{font-weight:600;color:var(--navy);text-decoration:none;font-size:16px}
+.back:hover{color:var(--green)}
+main{padding:48px 0 56px}
+.kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin:0 0 10px}
+h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,4.4vw,44px);line-height:1.15;margin:0 0 16px}
+.lead{font-size:20px;color:var(--muted);margin:0 0 36px}
+h2{font-size:21px;margin:34px 0 12px}
+ul{margin:0;padding-left:22px}
+li{margin-bottom:8px}
+.checks{list-style:none;padding:0}
+.checks li{padding-left:34px;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:20px;height:20px;border:2px solid var(--green);border-radius:5px;background:var(--white)}
+.note{font-size:16px;color:var(--muted);margin:10px 0 0}
+.law{font-size:16px;color:var(--muted);border-left:3px solid var(--line);padding-left:14px;margin-top:28px}
+.help{background:var(--green-soft);border-radius:14px;padding:22px 24px;margin-top:36px}
+.help h2{margin-top:0}
+.help p{margin:0 0 16px;color:#24433a}
+.btn{display:inline-block;background:var(--green);color:var(--white);text-decoration:none;font-weight:700;padding:12px 20px;border-radius:10px}
+.btn:hover{background:#17614a}
+.warn{background:var(--amber-soft);border-radius:10px;padding:14px 18px;margin-top:24px;font-size:16px}
+footer{background:var(--navy);color:#9aa7b5;font-size:14px;padding:22px 0 30px}
+@media (max-width:720px){body{font-size:17px}.bar img{height:38px}main{padding:36px 0 44px}}
+.case p{margin:0 0 12px}
+.case ul,.case ol{margin:0 0 12px}
+blockquote{margin:8px 0 14px;padding:12px 16px;background:var(--white);border-left:4px solid #c47f17;border-radius:0 10px 10px 0;font-style:italic}
+.disclaimer{font-size:14px;color:var(--muted);margin-top:22px}
+.verif{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:22px 0}
+.verif-t{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin:0 0 10px}
+.verif table{width:100%;border-collapse:collapse;font-size:16px}
+.verif th{text-align:left;font-size:14px;color:var(--muted);border-bottom:1px solid var(--line);padding:6px 8px}
+.verif td{vertical-align:top;border-bottom:1px solid var(--line);padding:10px 8px}
+.tag{display:inline-block;font-size:13px;font-weight:700;border-radius:999px;padding:2px 10px;margin:0 6px 4px 0}
+.tag.ok{background:#fbf1df;color:#8a5a0d}
+.tag.best{background:var(--green-soft);color:var(--green)}
+.tag.no{background:#f8e3e3;color:#8a2f2f}
+.tag.warn{background:#e3ecf6;color:#2f5d8a}
+.tag.safe{background:#1f7a5c;color:#fff}
+.verif-r{margin:12px 0 0}
+.sched{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 14px;background:var(--white)}
+.sched th,.sched td{border:1px solid var(--line);padding:6px 4px;text-align:center}
+.sched th{background:var(--ivory);font-size:13px}
+.sched td.off{background:var(--green-soft);color:var(--green);font-weight:700}
+@media (max-width:720px){.sched{font-size:10.5px;table-layout:fixed}.sched th,.sched td{padding:5px 1px}}
+.tbl{overflow-x:auto;margin:6px 0 14px}
+.tbl table{width:100%;border-collapse:collapse;font-size:16px;background:var(--white);border:1px solid var(--line);border-radius:12px}
+.tbl th{text-align:left;font-size:14px;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line)}
+.tbl td{vertical-align:top;padding:10px;border-bottom:1px solid var(--line)}
+@media (max-width:720px){.tbl td,.tbl th{display:block;border:0;padding:3px 0}.tbl tr{display:block;border-bottom:1px solid var(--line);padding:8px 12px}.tbl tr:first-child{display:none}.tbl td:first-child{font-weight:700}}
+.alert{background:#fbf1df;border-radius:14px;padding:18px 20px;margin:22px 0}
+.alert-t{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8a5a0d;font-weight:700;margin:0 0 8px}
+.alert ul{margin:0 0 10px}
+.alert-n{font-size:15px;color:var(--muted);margin:0}
+@media (max-width:720px){.verif td,.verif th{display:block;border:0;padding:4px 0}.verif tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}.verif tr:first-child{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a href="index.html" aria-label="Colegajuda — início"><img src="logotipo.svg" alt="Colegajuda"></a>
+  <a class="back" href="guia.html">← Guia de RH</a>
+</div></header>
+<main><div class="wrap case">
+  <p class="kicker">Caso prático</p>
+  <h1>O horário generoso que saiu caro</h1>
+  <p class="lead">Um patrão quis dar folgas longas à equipa e desenhou uma escala de 3 dias de trabalho e folgas alternadas, com tudo acordado com os trabalhadores. Encontre os «se» e os sinais de alerta, e perceba porque é que as boas intenções podem sair caras.</p>
+  
+<h2>A situação</h2>
+<p>Uma loja de conveniência num posto de combustível funciona das 7h00 às 23h00, com 5 trabalhadores. Os turnos de 8 horas de trabalho são <strong>das 6h00 às 15h00</strong> e <strong>das 15h00 às 24h00</strong>, com 1 hora para a refeição.</p>
+<p>O patrão quis ser justo e criou uma escala rotativa: <strong>3 dias de trabalho, 1 folga, 3 dias de trabalho, 2 folgas</strong>, com um bloco de tardes e outro de manhãs. As duas folgas, somadas ao fim da tarde e à manhã livre, davam 3 dias seguidos de descanso (72 horas). Não havia IRCT aplicável; o regime estava no regulamento interno e todos tinham concordado.</p>
+<table class="sched">
+<tr><th>Dia</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
+<tr><th>Escala</th><td>Tarde</td><td>Tarde</td><td>Tarde</td><td class="off">Folga</td><td>Manhã</td><td>Manhã</td><td>Manhã</td><td class="off">Folga</td><td class="off">Folga</td></tr>
+</table>
+<p>Todos gostavam do horário. Até que um trabalhador saiu da empresa em conflito e reclamou o descanso que, segundo ele, nunca teve e as horas a mais das semanas longas.</p>
+
+<h2>Os «se» e os sinais de alerta</h2>
+<ul>
+<li><strong>Se a passagem da tarde para a manhã se faz depois de uma só folga</strong> — sai à meia-noite do dia 3 e entra às 6h00 do dia 5: 30 horas de descanso. Parece muito, mas se essa folga for o dia de descanso semanal obrigatório, a lei exige que seja seguida das 11 horas de descanso diário: pelo menos 35 horas seguidas. Faltam 5 horas, em cada ciclo; a manhã só poderia começar às 11h00.</li>
+<li><strong>Se ninguém sabe qual é o dia de descanso obrigatório</strong> — numa escala rotativa, tem de estar identificado. É isso que define onde se aplicam as 35 horas.</li>
+<li><strong>Se a mudança de turno se fizesse sem folga</strong> — fecho à meia-noite e abertura às 6h00: 6 horas de descanso, abaixo das 11 horas mínimas.</li>
+<li><strong>Se se contou com a média das horas</strong> — com 8 horas por turno, uma semana em que calhem 6 dias de trabalho chega a 48 horas. A média do ciclo (6 turnos em 9 dias) fica abaixo das 40 horas, mas a média só pode ser usada com um regime de adaptabilidade válido; por acordo individual, o limite é de 50 horas por semana. As 48 horas cabem nesse limite, mas só se o regime existir.</li>
+<li><strong>Se o regime estava só no regulamento interno</strong> — a adaptabilidade por acordo individual exige proposta escrita e aceitação de cada trabalhador; o regulamento interno tem requisitos próprios. Sem prova da aceitação do trabalhador que saiu, o regime pode não valer para ele, e as horas acima das 8 por dia e 40 por semana passam a trabalho suplementar.</li>
+<li><strong>Se o trabalho noturno não aparece no recibo</strong> — das 22h00 à meia-noite (turno da tarde) e das 6h00 às 7h00 (turno da manhã) é trabalho noturno, com acréscimo de 25 %, salvo outra regra de IRCT. Muitas empresas pagam o da noite e esquecem o da madrugada.</li>
+<li><strong>Se a hora de abertura e a de fecho não fossem contadas</strong> — preparar a loja e fazer o fecho é tempo de trabalho, mesmo com a porta fechada ao público.</li>
+</ul>
+
+<p><strong>Os descansos, passagem a passagem:</strong></p>
+<div class="tbl"><table>
+<tr><th>Passagem</th><th>Descanso</th><th>Mínimo</th><th>Resultado</th></tr>
+<tr><td>Manhã → manhã (15h00 → 6h00)</td><td>15 h</td><td>11 h</td><td>Cumpre</td></tr>
+<tr><td>Tarde → tarde (24h00 → 15h00)</td><td>15 h</td><td>11 h</td><td>Cumpre</td></tr>
+<tr><td>Tarde → manhã no dia seguinte (24h00 → 6h00)</td><td>6 h</td><td>11 h</td><td>Não cumpre</td></tr>
+<tr><td>Tarde → manhã depois de uma folga obrigatória</td><td>30 h</td><td>35 h</td><td>Não cumpre</td></tr>
+<tr><td>Tarde → manhã depois das duas folgas</td><td>54 h</td><td>35 h</td><td>Cumpre</td></tr>
+</table></div>
+
+<h2>O que diz a lei, em geral</h2>
+<ul>
+<li>Entre dois períodos diários de trabalho há pelo menos 11 horas seguidas de descanso (Código do Trabalho, art. 214.º).</li>
+<li>O dia de descanso semanal obrigatório é gozado seguido das 11 horas de descanso diário — na prática, pelo menos 35 horas seguidas; o descanso complementar gozado a seguir conta para essas 11 horas. A violação é contraordenação grave (art. 233.º).</li>
+<li>O período normal de trabalho é de 8 horas por dia e 40 por semana; a média num período mais longo só é possível com adaptabilidade, prevista em IRCT ou acordada por escrito, com limites próprios (arts. 203.º a 207.º).</li>
+<li>O intervalo de descanso é de 1 a 2 horas, para que não se trabalhe mais de 5 horas seguidas; sem IRCT, a redução depende de autorização da ACT (art. 213.º).</li>
+<li>O trabalho noturno (por regra, das 22h00 às 7h00) tem acréscimo de 25 % (arts. 223.º e 266.º).</li>
+<li>Os descansos de 11 e de 35 horas não se afastam por acordo, fora das exceções previstas na lei.</li>
+</ul>
+
+<div class="alert">
+<p class="alert-t">Dois acordos, dois valores diferentes</p>
+<ul>
+<li><strong>Adaptabilidade:</strong> o acordo escrito de cada trabalhador chega — dentro dos limites.</li>
+<li><strong>Descansos de 11 e 35 horas:</strong> nenhum acordo os reduz.</li>
+</ul>
+<p class="alert-n">O que o trabalhador pode reclamar em concreto depende dos factos e da prova; num litígio, é matéria para o advogado. Neste caso fictício assume-se que não há IRCT; na realidade, confirme sempre se existe contrato coletivo do setor ou portaria de extensão.</p>
+</div>
+
+<div class="verif">
+<p class="verif-t">Verificação dos factos</p>
+<table>
+<tr><th>Prática</th><th>Avaliação</th></tr>
+<tr><td>Passar da tarde para a manhã no dia seguinte, ou depois de uma só folga que seja o descanso obrigatório</td><td><span class="tag no">Evitar</span> descanso abaixo das 11 ou das 35 horas</td></tr>
+<tr><td>Semanas acima das 40 horas compensadas pela média, com o regime só no regulamento interno</td><td><span class="tag warn">Atenção</span> fazer acordo escrito assinado por cada trabalhador e respeitar o limite semanal</td></tr>
+<tr><td>Inverter a rotação: manhãs antes das tardes, e passar da tarde para a manhã só depois das duas folgas</td><td><span class="tag best">Recomendado</span> mantém as folgas longas e cumpre os descansos</td></tr>
+</table>
+<p class="verif-r"><strong>Regra prática: da manhã para a tarde, a qualquer momento; da tarde para a manhã, só depois das duas folgas.</strong></p>
+</div>
+
+<h2>Como prevenir</h2>
+<ol>
+<li>Identificar na escala qual é o dia de descanso obrigatório de cada trabalhador.</li>
+<li>Verificar cada escala antes de a publicar: 11 horas entre dias, 35 horas à volta do descanso obrigatório, intervalo de refeição, horas por dia e por semana, trabalho noturno.</li>
+<li>Formalizar a adaptabilidade com acordo escrito de cada trabalhador e respeitar os limites.</li>
+<li>Pagar o acréscimo do trabalho noturno, incluindo o da madrugada.</li>
+<li>Afixar o mapa de horário e manter o registo de tempos de trabalho; alterações com antecedência e por escrito.</li>
+</ol>
+
+  <div class="help">
+    <h2>Como ajudamos</h2>
+    <p>Verificamos as escalas antes de serem publicadas e preparamos um modelo de escala em folha de cálculo que assinala automaticamente descansos insuficientes, semanas acima do limite, pausas e horas noturnas.</p>
+    <a class="btn" href="index.html#contacto">Pedir o diagnóstico</a>
+  </div>
+  <p class="disclaimer">Caso fictício, para fins informativos. Não constitui parecer jurídico sobre casos concretos.</p>
+</div></main>
+<footer><div class="wrap">© 2026 Colegajuda · <a href="politica-privacidade.html" style="color:#c9d2dc">Política de privacidade</a></div></footer>
+</body>
+</html>
