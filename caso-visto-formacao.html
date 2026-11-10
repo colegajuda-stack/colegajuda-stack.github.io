@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tem visto válido, pode trabalhar… ou não? — Colegajuda</title>
+<meta name="description" content="Uma residência de idosos contratou uma formanda da CPLP que entregou todos os documentos — até o registo criminal e um e-mail da AIMA. Parecia tudo em ordem. Encontre os «se» e os sinais de alerta, e perceba porque é que, na contratação de estrangeiros, ler cada documento até ao fim faz toda a diferença.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/source-sans-3-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/source-sans-3-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/source-sans-3-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/fraunces-latin-700-normal.woff2) format('woff2')}
+:root{--navy:#1e2a38;--blue:#2f5d8a;--green:#1f7a5c;--green-soft:#e6f1ec;--ivory:#f6f4ef;--line:#e3e0d8;--muted:#4b5563;--white:#fff;--amber-soft:#fbf1df}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ivory);color:var(--navy);font-family:'Source Sans 3',system-ui,sans-serif;font-size:18px;line-height:1.6}
+a{color:var(--blue)}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:var(--ivory)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.bar img{height:44px;width:auto;display:block}
+.back{font-weight:600;color:var(--navy);text-decoration:none;font-size:16px}
+.back:hover{color:var(--green)}
+main{padding:48px 0 56px}
+.kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin:0 0 10px}
+h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,4.4vw,44px);line-height:1.15;margin:0 0 16px}
+.lead{font-size:20px;color:var(--muted);margin:0 0 36px}
+h2{font-size:21px;margin:34px 0 12px}
+ul{margin:0;padding-left:22px}
+li{margin-bottom:8px}
+.checks{list-style:none;padding:0}
+.checks li{padding-left:34px;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:20px;height:20px;border:2px solid var(--green);border-radius:5px;background:var(--white)}
+.note{font-size:16px;color:var(--muted);margin:10px 0 0}
+.law{font-size:16px;color:var(--muted);border-left:3px solid var(--line);padding-left:14px;margin-top:28px}
+.help{background:var(--green-soft);border-radius:14px;padding:22px 24px;margin-top:36px}
+.ask{margin:18px 0 0;padding:14px 16px;border:1px dashed var(--line);border-radius:12px;font-size:15px}
+.ask p{margin:0 0 8px}
+.ask-links{display:flex;flex-wrap:wrap;gap:8px;margin:0!important}
+.ask-links a{padding:6px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;color:var(--green)}
+.ask-links a:hover{border-color:var(--green)}
+.help h2{margin-top:0}
+.help p{margin:0 0 16px;color:#24433a}
+.btn{display:inline-block;background:var(--green);color:var(--white);text-decoration:none;font-weight:700;padding:12px 20px;border-radius:10px}
+.btn:hover{background:#17614a}
+.warn{background:var(--amber-soft);border-radius:10px;padding:14px 18px;margin-top:24px;font-size:16px}
+footer{background:var(--navy);color:#9aa7b5;font-size:14px;padding:22px 0 30px}
+@media (max-width:720px){body{font-size:17px}.bar img{height:38px}main{padding:36px 0 44px}}
+.case p{margin:0 0 12px}
+.case ul,.case ol{margin:0 0 12px}
+blockquote{margin:8px 0 14px;padding:12px 16px;background:var(--white);border-left:4px solid #c47f17;border-radius:0 10px 10px 0;font-style:italic}
+.disclaimer{font-size:14px;color:var(--muted);margin-top:22px}
+.verif{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:22px 0}
+.verif-t{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin:0 0 10px}
+.verif table{width:100%;border-collapse:collapse;font-size:16px}
+.verif th{text-align:left;font-size:14px;color:var(--muted);border-bottom:1px solid var(--line);padding:6px 8px}
+.verif td{vertical-align:top;border-bottom:1px solid var(--line);padding:10px 8px}
+.tag{display:inline-block;font-size:13px;font-weight:700;border-radius:999px;padding:2px 10px;margin:0 6px 4px 0}
+.tag.ok{background:#fbf1df;color:#8a5a0d}
+.tag.best{background:var(--green-soft);color:var(--green)}
+.tag.no{background:#f8e3e3;color:#8a2f2f}
+.tag.warn{background:#e3ecf6;color:#2f5d8a}
+.tag.safe{background:#1f7a5c;color:#fff}
+.verif-r{margin:12px 0 0}
+.sched{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 14px;background:var(--white)}
+.sched th,.sched td{border:1px solid var(--line);padding:6px 4px;text-align:center}
+.sched th{background:var(--ivory);font-size:13px}
+.sched td.off{background:var(--green-soft);color:var(--green);font-weight:700}
+@media (max-width:720px){.sched{font-size:10.5px;table-layout:fixed}.sched th,.sched td{padding:5px 1px}}
+.tbl{overflow-x:auto;margin:6px 0 14px}
+.tbl table{width:100%;border-collapse:collapse;font-size:16px;background:var(--white);border:1px solid var(--line);border-radius:12px}
+.tbl th{text-align:left;font-size:14px;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line)}
+.tbl td{vertical-align:top;padding:10px;border-bottom:1px solid var(--line)}
+@media (max-width:720px){.tbl td,.tbl th{display:block;border:0;padding:3px 0}.tbl tr{display:block;border-bottom:1px solid var(--line);padding:8px 12px}.tbl tr:first-child{display:none}.tbl td:first-child{font-weight:700}}
+.alert{background:#fbf1df;border-radius:14px;padding:18px 20px;margin:22px 0}
+.alert-t{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8a5a0d;font-weight:700;margin:0 0 8px}
+.alert ul{margin:0 0 10px}
+.alert-n{font-size:15px;color:var(--muted);margin:0}
+@media (max-width:720px){.verif td,.verif th{display:block;border:0;padding:4px 0}.verif tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}.verif tr:first-child{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a href="index.html" aria-label="Colegajuda — início"><img src="logotipo.svg" alt="Colegajuda"></a>
+  <a class="back" href="guia.html">← Guia de RH</a>
+</div></header>
+<main><div class="wrap case">
+  <p class="kicker">Caso prático</p>
+  <h1>Tem visto válido, pode trabalhar… ou não?</h1>
+  <p class="lead">Uma residência de idosos contratou uma formanda da CPLP que entregou todos os documentos — até o registo criminal e um e-mail da AIMA. Parecia tudo em ordem. Encontre os «se» e os sinais de alerta, e perceba porque é que, na contratação de estrangeiros, ler cada documento até ao fim faz toda a diferença.</p>
+  
+<h2>A situação</h2>
+<p>Uma residência de idosos contratou uma jovem de um país da <strong>CPLP</strong>, formanda de um curso de <strong>auxiliar de geriatria</strong>. Era titular de um <strong>visto de estada temporária CPLP</strong> que, à data da entrevista, só caducava dali a 7 meses, e entregou <strong>NIF, NISS, comprovativo de morada, IBAN, registo criminal e um e-mail da AIMA a confirmar um agendamento</strong>.</p>
+<p>O gerente concluiu que estava tudo legal — «é da CPLP e já tem processo na AIMA» — e fez a contratação. A admissão foi comunicada à Segurança Social e, no processamento, aplicaram-se as tabelas de retenção de IRS como a qualquer outra trabalhadora.</p>
+<p>Três meses depois, o contabilista viu nas Finanças que o NIF estava registado como <strong>não residente</strong>. Foi ver o processo e leu, pela primeira vez, a finalidade do visto: <strong>frequência de curso de formação profissional</strong>.</p>
+
+<h2>Os «se» e os sinais de alerta</h2>
+<ul>
+<li><strong>Se a quantidade de documentos deu a sensação de que estava tudo</strong> — NIF, NISS, morada, IBAN e registo criminal servem para identificar, pagar e conhecer a pessoa. Nenhum deles diz se ela pode trabalhar em Portugal. Isso só o título diz: visto ou autorização de residência que permita trabalho por conta de outrem.</li>
+<li><strong>Se o NISS foi tomado como autorização para trabalhar</strong> — o NISS identifica a pessoa na Segurança Social; não a autoriza a trabalhar.</li>
+<li><strong>Se ninguém leu a finalidade do visto</strong> — o visto de estada temporária é concedido para uma finalidade concreta. Um visto para frequentar um curso de formação profissional autoriza a estada para o curso, não um contrato de trabalho.</li>
+<li><strong>Se ser da CPLP pareceu dar direito a tudo</strong> — o regime CPLP agiliza a emissão do visto, mas não muda o que ele permite. Um visto de estada temporária CPLP para frequentar um curso tem a mesma finalidade e as mesmas regras que qualquer outro: autoriza a estada para o curso, não um contrato de trabalho. A Lei de Estrangeiros aplica-se da mesma forma.</li>
+<li><strong>Se um e-mail de agendamento foi lido como «já tem processo»</strong> — um agendamento na AIMA é só uma marcação. A AIMA aceita pedidos de atendimento mesmo de quem está em situação irregular — por exemplo, alguém com um visto Schengen caducado há meses, à espera de um atendimento marcado para daqui a vários meses. O agendamento não prova que haja processo, nem que venha a haver regularização, e muito menos que a pessoa possa trabalhar. Sendo o visto de estada temporária, que não tem como finalidade residir, um pedido de agendamento é uma tentativa de iniciar outro processo, à parte do visto.</li>
+<li><strong>Se ser formanda na mesma área pareceu bastar</strong> — o estágio de um curso segue as regras do curso e da entidade formadora; um contrato de trabalho, com salário, exige um título que permita trabalhar. São coisas diferentes.</li>
+<li><strong>Se «o visto só caduca daqui a 7 meses» foi lido como «pode trabalhar 7 meses»</strong> — a validade diz até quando a pessoa pode estar em Portugal; a finalidade diz para quê.</li>
+<li><strong>Se ninguém reparou na contradição</strong> — comprovativo de morada em Portugal e NIF registado como não residente: um dos dois não corresponde à realidade. É um sinal de alerta, também para o IRS.</li>
+<li><strong>Se a residência fiscal foi presumida</strong> — quem fica em Portugal mais de 183 dias, ou tem cá a sua residência habitual, é residente desde o primeiro dia; quem não é residente tem retenção à taxa de 25 %, e não as tabelas mensais. A empresa não controla os dias que a trabalhadora passa em Portugal — o visto permite entradas e saídas —, por isso não adivinha: pede a <strong>certidão de domicílio fiscal</strong> no Portal das Finanças e retém de acordo com o registo. Se o registo contradiz os outros documentos, como aqui, pede por escrito à trabalhadora que o regularize e decide o regime com o contabilista antes do primeiro processamento.</li>
+<li><strong>Se bastasse um pedido em curso</strong> — um comprovativo de pedido na AIMA não é um título. Também não o são os casos que correm fora da AIMA, por via judicial — por exemplo, uma ação em tribunal para obrigar a AIMA a decidir —, nem a opinião de um advogado. A regra prudente para a empresa é esperar pela decisão final da AIMA e pelo título concedido.</li>
+<li><strong>Se a verificação não ficou registada</strong> — sem registo do documento visto, da finalidade e da validade, a empresa não consegue mostrar o que confirmou, nem quando.</li>
+</ul>
+
+<p><strong>Qual é o regime de IRS? Num vencimento de 1.200 € por mês:</strong></p>
+<div class="tbl"><table>
+<tr><th>Situação</th><th>Retenção mensal</th></tr>
+<tr><td>Residente (mais de 183 dias em Portugal ou residência habitual cá)</td><td>Tabelas mensais de retenção</td></tr>
+<tr><td>Não residente, só com esta entidade e com declaração escrita: 25 % sobre o que excede 920 €</td><td>70 €</td></tr>
+<tr><td>Não residente, sem declaração escrita: 25 % sobre o total</td><td>300 €</td></tr>
+</table></div>
+
+<h2>As consequências</h2>
+<ul>
+<li><strong>Coima por ter ao serviço uma estrangeira sem título que permita trabalhar:</strong> de 2.000 € a 90.000 €, consoante o número de trabalhadores nessa situação, além de possíveis sanções acessórias (Lei 23/2007, art. 198.º-A).</li>
+<li><strong>O trabalho feito tem de ser pago.</strong> Mesmo um contrato inválido produz efeitos durante o tempo em que foi executado (Código do Trabalho, art. 122.º). A irregularidade é da empresa, não um desconto à trabalhadora.</li>
+<li><strong>Uma diferença de IRS pode ser exigida à empresa.</strong> Se a retenção foi feita no regime errado e ficou abaixo da devida, a empresa responde pela diferença, com juros; nos não residentes, em que a retenção é definitiva, é ela a responsável principal (Lei Geral Tributária, art. 28.º).</li>
+<li><strong>As declarações enviadas podem ter de ser corrigidas.</strong></li>
+<li><strong>A empresa tem de pôr fim à situação</strong> — e, numa residência de idosos, reorganizar escalas de um dia para o outro. A forma de o fazer e o que é devido à trabalhadora são matéria para o advogado da empresa.</li>
+</ul>
+
+<h2>Que documentos da AIMA contam para a empresa</h2>
+<div class="tbl"><table>
+<tr><th>Documento</th><th>O que prova</th><th>Para contratar</th></tr>
+<tr><td>E-mail de agendamento</td><td>Que foi marcado um atendimento</td><td>Nada</td></tr>
+<tr><td>Comprovativo de pedido</td><td>Que foi aceite um pedido para juntar a documentação necessária à análise</td><td>Não chega</td></tr>
+<tr><td>Comprovativo do estado do processo, com código QR</td><td>Em que fase está o processo; o código QR permite confirmar a informação atualizada</td><td>Mostra se já há decisão. Se estiver pendente, esperar — salvo se a pessoa já tiver um título que permite trabalhar: um título em renovação pedida a tempo, com comprovativo válido, ou um visto de procura de trabalho qualificado, para funções qualificadas</td></tr>
+<tr><td>Comprovativo de deferimento, com código QR</td><td>Que a autorização de residência foi concedida e o título está a ser emitido</td><td>Confirmar a autenticidade pelo código QR; a AIMA indica que não substitui o título quando este é legalmente exigido</td></tr>
+<tr><td>Título de residência ou visto que permita trabalhar</td><td>Que a pessoa pode trabalhar, e até quando</td><td>É este que conta</td></tr>
+</table></div>
+<p>Os comprovativos tiram-se no portal da AIMA. A empresa lê sempre o código QR, em vez de confiar numa cópia ou numa fotografia, e guarda o resultado da verificação no processo.</p>
+
+<h2>As regras apertaram</h2>
+<p>Nos últimos anos, a lei fechou várias vias para pedir autorização de residência já em Portugal, sem o visto adequado:</p>
+<ul>
+<li><strong>Junho de 2024</strong> — acabam as manifestações de interesse (Decreto-Lei 37-A/2024).</li>
+<li><strong>Outubro de 2025</strong> — são revogados os procedimentos que ainda se baseavam em manifestações de interesse, com prazo para o regime transitório até 31 de dezembro de 2025; e os cidadãos da CPLP passam a precisar de visto de residência para pedir a autorização de residência CPLP (Lei 61/2025).</li>
+<li><strong>Setembro de 2026</strong> — quem vem frequentar um curso profissional passa a precisar de visto de residência; acaba a via de pedir a autorização de residência já em Portugal com base no curso. Em vigor desde 11 de setembro de 2026 (Lei 62/2026).</li>
+</ul>
+<p><strong>Para a empresa:</strong> a ideia de que «a autorização de residência vem a caminho» é hoje muito menos segura do que era. O que conta é o título concedido, e não a expectativa de o vir a ter.</p>
+
+<h2>O que diz a lei, em geral</h2>
+<ul>
+<li>O visto de estada temporária permite a estada por menos de um ano para finalidades definidas na lei, entre elas a frequência de curso em estabelecimento de ensino ou de formação profissional (Lei 23/2007, art. 54.º, n.º 1, alínea k)).</li>
+<li>Para cidadãos da CPLP, a emissão de vistos é agilizada — por exemplo, sem parecer prévio dos serviços de estrangeiros —, mas as finalidades e as regras de cada visto mantêm-se (Lei 18/2022).</li>
+<li>O contrato de trabalho com estrangeiro é escrito e refere o título que permite trabalhar (Código do Trabalho, art. 5.º).</li>
+<li>É residente quem permanece em Portugal mais de 183 dias num período de 12 meses ou tem cá habitação que faça supor residência habitual; torna-se residente desde o primeiro dia de permanência (Código do IRS, art. 16.º).</li>
+<li>Rendimentos de trabalho dependente de não residentes: retenção à taxa liberatória de 25 %; sem retenção até ao salário mínimo, para quem trabalha para uma só entidade e o declara por escrito (Código do IRS, art. 71.º, n.os 4 a 6).</li>
+</ul>
+
+<div class="alert">
+<p class="alert-t">Três números, três perguntas diferentes</p>
+<ul>
+<li><strong>NISS:</strong> a pessoa está identificada na Segurança Social?</li>
+<li><strong>NIF:</strong> é residente ou não residente para efeitos de IRS — e isso corresponde à realidade?</li>
+<li><strong>Título (visto ou autorização de residência):</strong> pode trabalhar por conta de outrem, e até quando?</li>
+</ul>
+<p class="alert-n">Nenhum responde pelos outros, e nenhum outro documento (morada, IBAN, registo criminal) responde por eles. Caso fictício, com valores de 2026; a finalidade de cada título e a residência fiscal confirmam-se sempre no caso concreto.</p>
+</div>
+
+<div class="verif">
+<p class="verif-t">Verificação dos factos</p>
+<table>
+<tr><th>Prática</th><th>Avaliação</th></tr>
+<tr><td>Aceitar o NISS, ou a pasta completa de documentos, como prova de que a pessoa pode trabalhar</td><td><span class="tag no">Evitar</span> só o título o diz</td></tr>
+<tr><td>Ver só a validade do visto, sem ler a finalidade</td><td><span class="tag no">Evitar</span> um visto válido pode não permitir trabalhar</td></tr>
+<tr><td>Ler o título até ao fim, registar a finalidade e a validade, e só depois fazer o contrato</td><td><span class="tag best">Recomendado</span></td></tr>
+<tr><td>Aceitar a nacionalidade CPLP, um e-mail de agendamento ou um comprovativo de pedido como sinal de que pode trabalhar</td><td><span class="tag no">Evitar</span> nenhum deles é um título</td></tr>
+<tr><td>Confirmar pelo código QR o estado do processo ou o deferimento e guardar o resultado</td><td><span class="tag best">Recomendado</span> é a forma de verificar que o documento é autêntico e atual</td></tr>
+<tr><td>Contratar enquanto se espera por um título que permita trabalhar</td><td><span class="tag no">Evitar</span> o contrato começa quando o título existe</td></tr>
+<tr><td>Aplicar um regime de IRS sem confirmar a residência fiscal, ou com o registo nas Finanças em contradição com a morada</td><td><span class="tag no">Evitar</span> a empresa pode responder pela diferença</td></tr>
+<tr><td>Pedir a certidão de domicílio fiscal antes do primeiro processamento e reter de acordo com o registo; se contradiz os documentos, pedir por escrito a regularização e decidir com o contabilista</td><td><span class="tag best">Recomendado</span> a empresa segue o registo oficial e fica com prova</td></tr>
+<tr><td>Candidato com pedido pendente na AIMA, ou com o caso a correr por via judicial (ação em tribunal contra a AIMA), que apresenta um comprovativo, uma decisão intercalar ou a opinião de um advogado</td><td><span class="tag safe">Mais seguro</span> esperar pela decisão final e pelo título que permita trabalhar; atrasa a contratação, mas elimina o risco</td></tr>
+<tr><td>Dúvida sobre a finalidade do título</td><td><span class="tag safe">Mais seguro</span> não contratar até a dúvida estar esclarecida</td></tr>
+</table>
+<p class="verif-r"><strong>Regra prática: o NISS diz quem é; o título diz se pode trabalhar; a residência fiscal diz como se retém o IRS.</strong></p>
+</div>
+
+<h2>Como prevenir</h2>
+<ol>
+<li>Antes da proposta, pedir o título original e ler a finalidade, a validade e as observações.</li>
+<li>Registar a verificação: documento visto, finalidade, validade, data e quem verificou; marcar no calendário a data de fim de validade.</li>
+<li>Fazer o contrato por escrito, com referência ao título que permite trabalhar.</li>
+<li>Pedir a certidão de domicílio fiscal antes do primeiro processamento e sempre que a situação mude; contradições entre documentos esclarecem-se por escrito, antes, não depois.</li>
+<li>Nos não residentes, pedir a declaração escrita de entidade única e aplicar a taxa certa.</li>
+<li>Contratar só com o título que permite trabalhar já concedido. Com pedido pendente na AIMA, caso a correr por via judicial ou qualquer dúvida, esperar pela decisão final da AIMA.</li>
+</ol>
+
+  <div class="help">
+    <h2>Como ajudamos</h2>
+    <p>Antes da contratação, verificamos com a empresa os documentos do candidato, a finalidade do título e a situação fiscal, e preparamos o contrato e a lista de verificação de admissão. Não tratamos de vistos nem de autorizações de residência: quando é preciso, indicamos que o assunto segue para advogado.</p>
+    <a class="btn" href="index.html#contacto">Pedir o diagnóstico</a>
+  </div>
+  <div class="ask">
+    <p><strong>Ficou com dúvidas sobre este assunto?</strong> Escreva-nos. Não indique o nome da empresa nem dados de trabalhadores.</p>
+    <p class="ask-links"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=contacto@colegajuda.pt&su=D%C3%BAvida%20sobre%3A%20Tem%20visto%20v%C3%A1lido%2C%20pode%20trabalhar%E2%80%A6%20ou%20n%C3%A3o%3F&body=A%20minha%20d%C3%BAvida%3A%0A%0ASetor%20de%20atividade%3A%0AN.%C2%BA%20de%20trabalhadores%3A%0A%0A%28N%C3%A3o%20indique%20o%20nome%20da%20empresa%20nem%20dados%20pessoais%20de%20trabalhadores.%29%0A" target="_blank" rel="noopener">Gmail</a><a href="https://outlook.live.com/mail/0/deeplink/compose?to=contacto@colegajuda.pt&subject=D%C3%BAvida%20sobre%3A%20Tem%20visto%20v%C3%A1lido%2C%20pode%20trabalhar%E2%80%A6%20ou%20n%C3%A3o%3F&body=A%20minha%20d%C3%BAvida%3A%0A%0ASetor%20de%20atividade%3A%0AN.%C2%BA%20de%20trabalhadores%3A%0A%0A%28N%C3%A3o%20indique%20o%20nome%20da%20empresa%20nem%20dados%20pessoais%20de%20trabalhadores.%29%0A" target="_blank" rel="noopener">Outlook</a><a href="mailto:contacto@colegajuda.pt?subject=D%C3%BAvida%20sobre%3A%20Tem%20visto%20v%C3%A1lido%2C%20pode%20trabalhar%E2%80%A6%20ou%20n%C3%A3o%3F&body=A%20minha%20d%C3%BAvida%3A%0A%0ASetor%20de%20atividade%3A%0AN.%C2%BA%20de%20trabalhadores%3A%0A%0A%28N%C3%A3o%20indique%20o%20nome%20da%20empresa%20nem%20dados%20pessoais%20de%20trabalhadores.%29%0A">Programa de e-mail</a></p>
+  </div>
+  <p class="disclaimer">Caso fictício, para fins informativos. Não constitui parecer jurídico sobre casos concretos.</p>
+</div></main>
+<footer><div class="wrap">© 2026 Colegajuda · <a href="politica-privacidade.html" style="color:#c9d2dc">Política de privacidade</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A penhora que mudou de devedor — Colegajuda</title>
+<meta name="description" content="Uma empresa de logística cumpria há meses, sem uma falha, a penhora de um motorista. Até que chegou uma carta do tribunal de família para outro trabalhador — e ficou três semanas em cima de uma secretária. Encontre os «se» e os sinais de alerta, e perceba como a atenção ao detalhe, procedimentos organizados e respostas claras e atempadas evitam que a dívida de um trabalhador passe para a empresa.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/source-sans-3-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/source-sans-3-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/source-sans-3-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/fraunces-latin-700-normal.woff2) format('woff2')}
+:root{--navy:#1e2a38;--blue:#2f5d8a;--green:#1f7a5c;--green-soft:#e6f1ec;--ivory:#f6f4ef;--line:#e3e0d8;--muted:#4b5563;--white:#fff;--amber-soft:#fbf1df}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ivory);color:var(--navy);font-family:'Source Sans 3',system-ui,sans-serif;font-size:18px;line-height:1.6}
+a{color:var(--blue)}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:var(--ivory)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.bar img{height:44px;width:auto;display:block}
+.back{font-weight:600;color:var(--navy);text-decoration:none;font-size:16px}
+.back:hover{color:var(--green)}
+main{padding:48px 0 56px}
+.kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin:0 0 10px}
+h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,4.4vw,44px);line-height:1.15;margin:0 0 16px}
+.lead{font-size:20px;color:var(--muted);margin:0 0 36px}
+h2{font-size:21px;margin:34px 0 12px}
+ul{margin:0;padding-left:22px}
+li{margin-bottom:8px}
+.checks{list-style:none;padding:0}
+.checks li{padding-left:34px;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:20px;height:20px;border:2px solid var(--green);border-radius:5px;background:var(--white)}
+.note{font-size:16px;color:var(--muted);margin:10px 0 0}
+.law{font-size:16px;color:var(--muted);border-left:3px solid var(--line);padding-left:14px;margin-top:28px}
+.help{background:var(--green-soft);border-radius:14px;padding:22px 24px;margin-top:36px}
+.ask{margin:18px 0 0;padding:14px 16px;border:1px dashed var(--line);border-radius:12px;font-size:15px}
+.ask p{margin:0 0 8px}
+.ask-links{display:flex;flex-wrap:wrap;gap:8px;margin:0!important}
+.ask-links a{padding:6px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;color:var(--green)}
+.ask-links a:hover{border-color:var(--green)}
+.help h2{margin-top:0}
+.help p{margin:0 0 16px;color:#24433a}
+.btn{display:inline-block;background:var(--green);color:var(--white);text-decoration:none;font-weight:700;padding:12px 20px;border-radius:10px}
+.btn:hover{background:#17614a}
+.warn{background:var(--amber-soft);border-radius:10px;padding:14px 18px;margin-top:24px;font-size:16px}
+footer{background:var(--navy);color:#9aa7b5;font-size:14px;padding:22px 0 30px}
+@media (max-width:720px){body{font-size:17px}.bar img{height:38px}main{padding:36px 0 44px}}
+.case p{margin:0 0 12px}
+.case ul,.case ol{margin:0 0 12px}
+blockquote{margin:8px 0 14px;padding:12px 16px;background:var(--white);border-left:4px solid #c47f17;border-radius:0 10px 10px 0;font-style:italic}
+.disclaimer{font-size:14px;color:var(--muted);margin-top:22px}
+.verif{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:22px 0}
+.verif-t{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin:0 0 10px}
+.verif table{width:100%;border-collapse:collapse;font-size:16px}
+.verif th{text-align:left;font-size:14px;color:var(--muted);border-bottom:1px solid var(--line);padding:6px 8px}
+.verif td{vertical-align:top;border-bottom:1px solid var(--line);padding:10px 8px}
+.tag{display:inline-block;font-size:13px;font-weight:700;border-radius:999px;padding:2px 10px;margin:0 6px 4px 0}
+.tag.ok{background:#fbf1df;color:#8a5a0d}
+.tag.best{background:var(--green-soft);color:var(--green)}
+.tag.no{background:#f8e3e3;color:#8a2f2f}
+.tag.warn{background:#e3ecf6;color:#2f5d8a}
+.tag.safe{background:#1f7a5c;color:#fff}
+.verif-r{margin:12px 0 0}
+.sched{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 14px;background:var(--white)}
+.sched th,.sched td{border:1px solid var(--line);padding:6px 4px;text-align:center}
+.sched th{background:var(--ivory);font-size:13px}
+.sched td.off{background:var(--green-soft);color:var(--green);font-weight:700}
+@media (max-width:720px){.sched{font-size:10.5px;table-layout:fixed}.sched th,.sched td{padding:5px 1px}}
+.tbl{overflow-x:auto;margin:6px 0 14px}
+.tbl table{width:100%;border-collapse:collapse;font-size:16px;background:var(--white);border:1px solid var(--line);border-radius:12px}
+.tbl th{text-align:left;font-size:14px;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line)}
+.tbl td{vertical-align:top;padding:10px;border-bottom:1px solid var(--line)}
+@media (max-width:720px){.tbl td,.tbl th{display:block;border:0;padding:3px 0}.tbl tr{display:block;border-bottom:1px solid var(--line);padding:8px 12px}.tbl tr:first-child{display:none}.tbl td:first-child{font-weight:700}}
+.alert{background:#fbf1df;border-radius:14px;padding:18px 20px;margin:22px 0}
+.alert-t{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8a5a0d;font-weight:700;margin:0 0 8px}
+.alert ul{margin:0 0 10px}
+.alert-n{font-size:15px;color:var(--muted);margin:0}
+@media (max-width:720px){.verif td,.verif th{display:block;border:0;padding:4px 0}.verif tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}.verif tr:first-child{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a href="index.html" aria-label="Colegajuda — início"><img src="logotipo.svg" alt="Colegajuda"></a>
+  <a class="back" href="guia.html">← Guia de RH</a>
+</div></header>
+<main><div class="wrap case">
+  <p class="kicker">Caso prático</p>
+  <h1>A penhora que mudou de devedor</h1>
+  <p class="lead">Uma empresa de logística cumpria há meses, sem uma falha, a penhora de um motorista. Até que chegou uma carta do tribunal de família para outro trabalhador — e ficou três semanas em cima de uma secretária. Encontre os «se» e os sinais de alerta, e perceba como a atenção ao detalhe, procedimentos organizados e respostas claras e atempadas evitam que a dívida de um trabalhador passe para a empresa.</p>
+  
+<h2>A situação</h2>
+<p>Uma empresa de logística tinha, há vários meses, uma penhora sobre o vencimento de um motorista. A exequente era uma operadora de telecomunicações e a notificação vinha de um agente de execução. O motorista recebia 1.250 € líquidos; depois do desconto, ficava com <strong>920 €</strong>, o salário mínimo nacional. A empresa fazia o cálculo todos os meses sem falhas.</p>
+<p>Depois chegou um pedido do <strong>tribunal de família e menores</strong> para descontar ao vencimento de um operador de armazém uma pensão de alimentos de <strong>200 € por mês</strong>, a entregar diretamente à mãe do menor. O operador recebia <strong>1.050 € líquidos</strong>.</p>
+<p>A carta ficou três semanas em cima de uma secretária, e no primeiro mês não se descontou nada. Quando o desconto começou, quem processava aplicou a regra que já conhecia: o trabalhador tinha de ficar com 920 €. Descontava <strong>130 €</strong> em vez de 200 €.</p>
+<p>Dez meses depois, o tribunal notificou a empresa para explicar a diferença. A partir desse momento, o problema deixou de ser só do trabalhador.</p>
+
+<h2>Os «se» e os sinais de alerta</h2>
+<ul>
+<li><strong>Se a notificação ficou parada</strong> — os prazos contam a partir da notificação, não do dia em que alguém a lê. Cada mês sem desconto é um valor em falta.</li>
+<li><strong>Se não se leu quem a enviou</strong> — um agente de execução numa dívida comum e um tribunal de família numa pensão de alimentos são situações diferentes, com regras diferentes.</li>
+<li><strong>Se se aplicou o limite das penhoras comuns aos alimentos</strong> — nas penhoras comuns, o trabalhador fica protegido em 2/3 do líquido e, por regra, nunca com menos do que o salário mínimo. Nos alimentos, só fica protegido o valor da pensão social do regime não contributivo: 262,40 € em 2026.</li>
+<li><strong>Se a empresa decidiu sozinha que o trabalhador «não podia ficar com menos»</strong> — o valor e o limite constam da notificação e da lei. Se a empresa tem dúvidas, pergunta ao tribunal; não decide por conta própria.</li>
+<li><strong>Se não se cumpriu a forma de pagamento</strong> — nesta ordem, o valor ia diretamente para a mãe do menor, e não para a conta de um agente de execução.</li>
+<li><strong>Se ninguém respondeu a explicar</strong> — quando a empresa não consegue descontar o valor total, deve comunicá-lo por escrito, com o cálculo, dentro do prazo. O silêncio pode ser entendido como reconhecimento da obrigação nos termos notificados, e a empresa pode passar a responder por esse valor.</li>
+<li><strong>Se não havia um registo das penhoras</strong> — com duas penhoras ao mesmo tempo, cada uma com a sua regra, a memória de quem processa não chega.</li>
+</ul>
+
+<p><strong>As contas:</strong></p>
+<div class="tbl"><table>
+<tr><th></th><th>O que a empresa fez</th><th>O que devia ter feito</th><th>Diferença</th></tr>
+<tr><td>1.º mês</td><td>0 €</td><td>200 €</td><td>200 €</td></tr>
+<tr><td>Meses seguintes (9)</td><td>130 €</td><td>200 €</td><td>70 € × 9 = 630 €</td></tr>
+<tr><td>Total</td><td>1.170 €</td><td>2.000 €</td><td><strong>830 €</strong></td></tr>
+</table></div>
+<p>Com o desconto correto, o operador ficaria com 850 €, acima dos 262,40 € protegidos.</p>
+
+<h2>Quando a dívida passa para a empresa</h2>
+<p>Quando é notificada para descontar, a empresa deixa de ser só a entidade que paga o vencimento: passa a ser responsável por reter e entregar os valores indicados. Se não o fizer, <strong>a dívida pode passar para ela</strong>:</p>
+<ul>
+<li>O valor que devia ter sido descontado e não foi pode ser exigido à empresa no próprio processo. A notificação, a resposta da empresa ou a falta dela servem de base para a cobrança, sem precisar de um novo processo (Código de Processo Civil, art. 777.º, n.º 3).</li>
+<li>Se a empresa não respondeu à notificação, pode ficar a responder nos termos que lá constavam, e não pelo valor que achava correto.</li>
+<li>Na pensão de alimentos, o tribunal costuma advertir que a entidade que não cumprir o desconto fica responsável pelas quantias que devia ter descontado.</li>
+<li>Neste caso, os 830 € em falta podem ser cobrados à empresa, que ficaria a pagar uma dívida que não é sua.</li>
+</ul>
+<p>O mesmo vale para a penhora do motorista: se, num mês, a empresa se esquecesse do desconto ou o calculasse por baixo, a diferença podia ser-lhe exigida pelo agente de execução.</p>
+
+<h2>Outras consequências</h2>
+<ul>
+<li><strong>Recuperar o valor junto do trabalhador nem sempre é possível</strong> e não pode ser feito com descontos por iniciativa da empresa; é matéria para o advogado.</li>
+<li><strong>O menor ficou meses a receber menos</strong> do que o tribunal fixou.</li>
+<li><strong>A empresa passou a ter de explicar ao tribunal</strong>, por escrito e dentro do prazo, o que fez e porquê.</li>
+</ul>
+
+<h2>Penhora comum ou pensão de alimentos: o que muda</h2>
+<div class="tbl"><table>
+<tr><th></th><th>Penhora comum</th><th>Pensão de alimentos</th></tr>
+<tr><td>Quem notifica, por regra</td><td>Agente de execução</td><td>Tribunal (de família e menores)</td></tr>
+<tr><td>O que fica protegido</td><td>2/3 do líquido; por regra, nunca menos do que o salário mínimo (920 €) e com um máximo de 3 salários mínimos</td><td>Só a pensão social (262,40 € em 2026)</td></tr>
+<tr><td>Valor a descontar</td><td>Resulta do cálculo do limite</td><td>Valor fixado na ordem, dentro do limite</td></tr>
+<tr><td>Para onde vai o dinheiro</td><td>Conta indicada pelo agente de execução</td><td>A indicada na ordem, muitas vezes diretamente a quem recebe a pensão</td></tr>
+<tr><td>Base legal</td><td>Código de Processo Civil, art. 738.º, n.os 1 a 3</td><td>Código de Processo Civil, art. 738.º, n.º 4; Regime Geral do Processo Tutelar Cível, art. 48.º</td></tr>
+</table></div>
+
+<div class="alert">
+<p class="alert-t">A notificação manda; a empresa cumpre ou explica</p>
+<ul>
+<li>Cumpre o valor, a data e a forma de pagamento que lá estão.</li>
+<li>Se não conseguir cumprir tudo, desconta o possível e explica por escrito, com o cálculo, dentro do prazo.</li>
+<li>Se tiver dúvidas, pergunta a quem notificou antes de processar.</li>
+</ul>
+<p class="alert-n">Caso fictício, com valores de 2026. O líquido calcula-se depois dos descontos obrigatórios; os limites e o valor a descontar dependem sempre da notificação concreta.</p>
+</div>
+
+<div class="verif">
+<p class="verif-t">Verificação dos factos</p>
+<table>
+<tr><th>Prática</th><th>Avaliação</th></tr>
+<tr><td>Deixar a notificação à espera de «ter tempo»</td><td><span class="tag no">Evitar</span> cada mês sem desconto pode passar a ser dívida da empresa</td></tr>
+<tr><td>Aplicar o limite do salário mínimo a uma pensão de alimentos</td><td><span class="tag no">Evitar</span> nos alimentos, o limite é a pensão social</td></tr>
+<tr><td>Descontar o valor fixado quando o líquido o permite, mesmo que o trabalhador fique abaixo do salário mínimo</td><td><span class="tag best">Recomendado</span></td></tr>
+<tr><td>Valor fixo na ordem: descontar sem verificar o que fica ao trabalhador</td><td><span class="tag warn">Atenção</span> confirmar sempre que ficam, pelo menos, 262,40 €</td></tr>
+<tr><td>Responder por escrito, com o cálculo, dentro do prazo, e guardar o comprovativo</td><td><span class="tag best">Recomendado</span></td></tr>
+<tr><td>Combinar valores diretamente com o trabalhador ou com a mãe do menor</td><td><span class="tag no">Evitar</span> só o tribunal altera o que fixou</td></tr>
+</table>
+<p class="verif-r"><strong>Regra prática: penhora comum, protege o salário mínimo; pensão de alimentos, protege só a pensão social. E nenhuma notificação fica na gaveta.</strong></p>
+</div>
+
+<h2>Como prevenir</h2>
+<ol>
+<li>Abrir cada notificação no dia em que chega e registar a data de receção e o prazo.</li>
+<li>Ler a notificação linha a linha: quem a envia, tipo de dívida, valor, limite, forma e destino do pagamento, data de início.</li>
+<li>Manter um registo de penhoras por trabalhador: tipo, regra aplicável, valor, conta de destino, comunicações feitas.</li>
+<li>Recalcular todos os meses: subsídios, horas extra e faltas mudam o líquido e o valor possível.</li>
+<li>Responder sempre por escrito e guardar no processo individual a notificação, as respostas, os cálculos e os comprovativos de pagamento.</li>
+<li>Comunicar a quem notificou a cessação do contrato, a baixa ou outra alteração que afete o desconto.</li>
+</ol>
+
+  <div class="help">
+    <h2>Como ajudamos</h2>
+    <p>Ajudamos a ler cada notificação, preparamos a resposta e o cálculo do valor a descontar, e montamos um registo de penhoras com prazos, limites e comunicações, para que nada fique na gaveta.</p>
+    <a class="btn" href="index.html#contacto">Pedir o diagnóstico</a>
+  </div>
+  <div class="ask">
+    <p><strong>Ficou com dúvidas sobre este assunto?</strong> Escreva-nos. Não indique o nome da empresa nem dados de trabalhadores.</p>
+    <p class="ask-links"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=contacto@colegajuda.pt&su=D%C3%BAvida%20sobre%3A%20A%20penhora%20que%20mudou%20de%20devedor&body=A%20minha%20d%C3%BAvida%3A%0A%0ASetor%20de%20atividade%3A%0AN.%C2%BA%20de%20trabalhadores%3A%0A%0A%28N%C3%A3o%20indique%20o%20nome%20da%20empresa%20nem%20dados%20pessoais%20de%20trabalhadores.%29%0A" target="_blank" rel="noopener">Gmail</a><a href="https://outlook.live.com/mail/0/deeplink/compose?to=contacto@colegajuda.pt&subject=D%C3%BAvida%20sobre%3A%20A%20penhora%20que%20mudou%20de%20devedor&body=A%20minha%20d%C3%BAvida%3A%0A%0ASetor%20de%20atividade%3A%0AN.%C2%BA%20de%20trabalhadores%3A%0A%0A%28N%C3%A3o%20indique%20o%20nome%20da%20empresa%20nem%20dados%20pessoais%20de%20trabalhadores.%29%0A" target="_blank" rel="noopener">Outlook</a><a href="mailto:contacto@colegajuda.pt?subject=D%C3%BAvida%20sobre%3A%20A%20penhora%20que%20mudou%20de%20devedor&body=A%20minha%20d%C3%BAvida%3A%0A%0ASetor%20de%20atividade%3A%0AN.%C2%BA%20de%20trabalhadores%3A%0A%0A%28N%C3%A3o%20indique%20o%20nome%20da%20empresa%20nem%20dados%20pessoais%20de%20trabalhadores.%29%0A">Programa de e-mail</a></p>
+  </div>
+  <p class="disclaimer">Caso fictício, para fins informativos. Não constitui parecer jurídico sobre casos concretos.</p>
+</div></main>
+<footer><div class="wrap">© 2026 Colegajuda · <a href="politica-privacidade.html" style="color:#c9d2dc">Política de privacidade</a></div></footer>
+</body>
+</html>

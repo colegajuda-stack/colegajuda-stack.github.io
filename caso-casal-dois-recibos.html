@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O domingo que abriu a conversa — Colegajuda</title>
+<meta name="description" content="Um empregado de bar reclamou que trabalha todos os domingos sem receber mais, enquanto a mulher, numa fábrica, recebe acréscimos ao domingo. O dono paga o que sempre pagou, sem saber exatamente porquê. Encontre os «se» e os sinais de alerta, e perceba porque é que conhecer o contrato coletivo aplicável é a melhor defesa da empresa.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/source-sans-3-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/source-sans-3-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/source-sans-3-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/fraunces-latin-700-normal.woff2) format('woff2')}
+:root{--navy:#1e2a38;--blue:#2f5d8a;--green:#1f7a5c;--green-soft:#e6f1ec;--ivory:#f6f4ef;--line:#e3e0d8;--muted:#4b5563;--white:#fff;--amber-soft:#fbf1df}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ivory);color:var(--navy);font-family:'Source Sans 3',system-ui,sans-serif;font-size:18px;line-height:1.6}
+a{color:var(--blue)}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:var(--ivory)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.bar img{height:44px;width:auto;display:block}
+.back{font-weight:600;color:var(--navy);text-decoration:none;font-size:16px}
+.back:hover{color:var(--green)}
+main{padding:48px 0 56px}
+.kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin:0 0 10px}
+h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,4.4vw,44px);line-height:1.15;margin:0 0 16px}
+.lead{font-size:20px;color:var(--muted);margin:0 0 36px}
+h2{font-size:21px;margin:34px 0 12px}
+ul{margin:0;padding-left:22px}
+li{margin-bottom:8px}
+.checks{list-style:none;padding:0}
+.checks li{padding-left:34px;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:20px;height:20px;border:2px solid var(--green);border-radius:5px;background:var(--white)}
+.note{font-size:16px;color:var(--muted);margin:10px 0 0}
+.law{font-size:16px;color:var(--muted);border-left:3px solid var(--line);padding-left:14px;margin-top:28px}
+.help{background:var(--green-soft);border-radius:14px;padding:22px 24px;margin-top:36px}
+.ask{margin:18px 0 0;padding:14px 16px;border:1px dashed var(--line);border-radius:12px;font-size:15px}
+.ask p{margin:0 0 8px}
+.ask-links{display:flex;flex-wrap:wrap;gap:8px;margin:0!important}
+.ask-links a{padding:6px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;color:var(--green)}
+.ask-links a:hover{border-color:var(--green)}
+.help h2{margin-top:0}
+.help p{margin:0 0 16px;color:#24433a}
+.btn{display:inline-block;background:var(--green);color:var(--white);text-decoration:none;font-weight:700;padding:12px 20px;border-radius:10px}
+.btn:hover{background:#17614a}
+.warn{background:var(--amber-soft);border-radius:10px;padding:14px 18px;margin-top:24px;font-size:16px}
+footer{background:var(--navy);color:#9aa7b5;font-size:14px;padding:22px 0 30px}
+@media (max-width:720px){body{font-size:17px}.bar img{height:38px}main{padding:36px 0 44px}}
+.case p{margin:0 0 12px}
+.case ul,.case ol{margin:0 0 12px}
+blockquote{margin:8px 0 14px;padding:12px 16px;background:var(--white);border-left:4px solid #c47f17;border-radius:0 10px 10px 0;font-style:italic}
+.disclaimer{font-size:14px;color:var(--muted);margin-top:22px}
+.verif{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:22px 0}
+.verif-t{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin:0 0 10px}
+.verif table{width:100%;border-collapse:collapse;font-size:16px}
+.verif th{text-align:left;font-size:14px;color:var(--muted);border-bottom:1px solid var(--line);padding:6px 8px}
+.verif td{vertical-align:top;border-bottom:1px solid var(--line);padding:10px 8px}
+.tag{display:inline-block;font-size:13px;font-weight:700;border-radius:999px;padding:2px 10px;margin:0 6px 4px 0}
+.tag.ok{background:#fbf1df;color:#8a5a0d}
+.tag.best{background:var(--green-soft);color:var(--green)}
+.tag.no{background:#f8e3e3;color:#8a2f2f}
+.tag.warn{background:#e3ecf6;color:#2f5d8a}
+.tag.safe{background:#1f7a5c;color:#fff}
+.verif-r{margin:12px 0 0}
+.sched{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 14px;background:var(--white)}
+.sched th,.sched td{border:1px solid var(--line);padding:6px 4px;text-align:center}
+.sched th{background:var(--ivory);font-size:13px}
+.sched td.off{background:var(--green-soft);color:var(--green);font-weight:700}
+@media (max-width:720px){.sched{font-size:10.5px;table-layout:fixed}.sched th,.sched td{padding:5px 1px}}
+.tbl{overflow-x:auto;margin:6px 0 14px}
+.tbl table{width:100%;border-collapse:collapse;font-size:16px;background:var(--white);border:1px solid var(--line);border-radius:12px}
+.tbl th{text-align:left;font-size:14px;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line)}
+.tbl td{vertical-align:top;padding:10px;border-bottom:1px solid var(--line)}
+@media (max-width:720px){.tbl td,.tbl th{display:block;border:0;padding:3px 0}.tbl tr{display:block;border-bottom:1px solid var(--line);padding:8px 12px}.tbl tr:first-child{display:none}.tbl td:first-child{font-weight:700}}
+.alert{background:#fbf1df;border-radius:14px;padding:18px 20px;margin:22px 0}
+.alert-t{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8a5a0d;font-weight:700;margin:0 0 8px}
+.alert ul{margin:0 0 10px}
+.alert-n{font-size:15px;color:var(--muted);margin:0}
+@media (max-width:720px){.verif td,.verif th{display:block;border:0;padding:4px 0}.verif tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}.verif tr:first-child{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a href="index.html" aria-label="Colegajuda — início"><img src="logotipo.svg" alt="Colegajuda"></a>
+  <a class="back" href="guia.html">← Guia de RH</a>
+</div></header>
+<main><div class="wrap case">
+  <p class="kicker">Caso prático</p>
+  <h1>O domingo que abriu a conversa</h1>
+  <p class="lead">Um empregado de bar reclamou que trabalha todos os domingos sem receber mais, enquanto a mulher, numa fábrica, recebe acréscimos ao domingo. O dono paga o que sempre pagou, sem saber exatamente porquê. Encontre os «se» e os sinais de alerta, e perceba porque é que conhecer o contrato coletivo aplicável é a melhor defesa da empresa.</p>
+  
+<h2>A situação</h2>
+<p>Um bar de bairro no Porto, com 4 trabalhadores, abre todos os dias, incluindo domingos e feriados, até à meia-noite. O Rui, empregado do bar, tem as folgas à segunda e à terça e trabalha todos os domingos.</p>
+<p>Um dia foi falar com o dono: «A minha mulher trabalha numa fábrica de componentes automóveis, por turnos, e quando lhe calha o domingo recebe mais. Eu trabalho todos os domingos e não recebo nada a mais.»</p>
+<p>O dono respondeu: «Aqui nunca se pagou domingos.» E, quando o Rui insistiu: «Pago o que a lei manda.»</p>
+<p>Na verdade, o dono paga o que sempre pagou — sem saber exatamente o que é, porquê, nem em que se baseia.</p>
+
+<h2>Os «se» e os sinais de alerta</h2>
+<ul>
+<li><strong>Se o dono acerta no domingo pela razão errada</strong> — não é por «nunca se ter pago». Na restauração e bebidas, o dia de descanso é o que resulta do horário de trabalho, e pode não ser ao domingo. Para o Rui, o domingo é um dia normal de trabalho: não tem acréscimo, nem pela lei nem pelo contrato coletivo do setor. Só teria se trabalhasse num dos seus dias de descanso — à segunda ou à terça.</li>
+<li><strong>Se se compara um bar com uma fábrica</strong> — a fábrica tem o seu próprio contrato coletivo (ou acordo de empresa) e trabalha por turnos. O que a mulher do Rui recebe ao domingo vem desse contrato, e não do Código do Trabalho.</li>
+<li><strong>Se «pago o que a lei manda» quer dizer «aplico só o Código do Trabalho»</strong> — o bar está abrangido pelo contrato coletivo da restauração e bebidas, por portaria de extensão, mesmo sem ser associado. A lei que o dono tem de cumprir inclui esse contrato coletivo — e todo ele.</li>
+<li><strong>Se o bar paga «o que sempre pagou»</strong> — quem não sabe em que se baseia cada valor acerta umas vezes e falha outras, sem dar por isso. Um erro repetido todos os meses acumula-se.</li>
+<li><strong>Se ninguém explicou o recibo</strong> — sem explicação, o trabalhador compara o que não é comparável e fica com a ideia de que está a ser enganado.</li>
+</ul>
+
+<h2>O que o dono paga bem — e o que paga mal</h2>
+<div class="tbl"><table>
+<tr><th>O que paga</th><th>Como está</th><th>Em que se baseia</th></tr>
+<tr><td>Domingo, sem acréscimo</td><td>Bem</td><td>É dia normal do horário do Rui; o contrato coletivo não prevê acréscimo</td></tr>
+<tr><td>Horas até à meia-noite, sem acréscimo noturno</td><td>Bem</td><td>No contrato coletivo, o período noturno começa à meia-noite; num bar até à 1h00, não há acréscimo</td></tr>
+<tr><td>Feriados trabalhados, pagos como dia normal</td><td>Mal</td><td>O contrato coletivo manda pagar mais 100 % (ou, por acordo, descanso compensatório equivalente); mesmo a lei geral daria 50 % ou metade das horas em descanso</td></tr>
+<tr><td>Salário base</td><td>Por confirmar</td><td>Tem de respeitar o nível da categoria na tabela de 2026 (entre 920 € e 1 431 €)</td></tr>
+<tr><td>Subsídio de alimentação</td><td>Por confirmar</td><td>O contrato coletivo prevê 150 € por mês, se pago em dinheiro, ou refeições em espécie</td></tr>
+<tr><td>Abono para falhas e dispensa no dia de aniversário</td><td>Por confirmar</td><td>Previstos no contrato coletivo (o abono, para quem trabalha com caixa)</td></tr>
+</table></div>
+
+<h2>O que o dono do bar devia responder</h2>
+<p>«O domingo faz parte do teu horário normal; os teus dias de descanso são a segunda e a terça, e só esses teriam acréscimo. As regras da fábrica da tua mulher são de outro contrato coletivo. O bar está abrangido pelo contrato coletivo da restauração e bebidas, e, ao confirmar isto, vi que nos feriados tens direito a mais 100 % — vou acertar os que trabalhaste. Vou também verificar a tua categoria, o salário e o subsídio de alimentação face à tabela de 2026, e dou-te resposta por escrito até ao fim do mês.»</p>
+
+<h2>Como fazer bem</h2>
+<ol>
+<li>Confirmar qual é o contrato coletivo aplicável: atividade, localização, filiação da empresa e do trabalhador, portaria de extensão em vigor.</li>
+<li>Aplicá-lo todo, e não só as cláusulas que convêm: categorias, tabela salarial, complementos, horários, trabalho noturno, feriados.</li>
+<li>Registar os feriados trabalhados e pagar o acréscimo do contrato coletivo, ou acordar por escrito o descanso compensatório.</li>
+<li>Explicar ao trabalhador, com o texto na mão, como se calcula cada valor do recibo.</li>
+<li>Quando há uma pergunta, responder por escrito e com prazo; se houver erro, corrigir e acertar os meses em falta.</li>
+<li>Afixar a indicação do contrato coletivo aplicável, como a lei obriga.</li>
+</ol>
+
+<h2>O que diz a lei, em geral</h2>
+<ul>
+<li>Por regra, o trabalho noturno é o prestado entre as 22h00 e as 7h00; o contrato coletivo pode definir outro período, com 7 a 11 horas e incluindo o intervalo entre a meia-noite e as 5h00 (Código do Trabalho, art. 223.º).</li>
+<li>Pela lei geral, quem presta trabalho normal num feriado, em empresa não obrigada a suspender a atividade, tem direito a descanso compensatório de metade das horas prestadas ou a acréscimo de 50 %, à escolha do empregador (art. 269.º); o contrato coletivo pode prever mais.</li>
+<li>Uma convenção coletiva aplica-se a quem a assinou ou é filiado nas associações que a assinaram; a portaria de extensão alarga-a a empregadores e trabalhadores do mesmo setor não filiados (arts. 496.º e 514.º).</li>
+<li>Restauração e bebidas: contrato coletivo AHRESP–SITESE, revisão global no BTE n.º 6/2026, cláusula 26.ª — período noturno da meia-noite às 7h00; 50 %, ou 25 % com 12 ou menos trabalhadores; sem acréscimo nos estabelecimentos que funcionam até à 1h00; nos estabelecimentos de bebidas, só para além das 2h00. Cláusula 30.ª: o descanso semanal é o que resulta do horário. Cláusula 31.ª: trabalho em feriado com acréscimo de 100 %, substituível por acordo por descanso compensatório equivalente. Portaria de extensão n.º 251/2026/1 (continente).</li>
+</ul>
+
+<div class="alert">
+<p class="alert-t">Cada setor tem as suas regras</p>
+<p>Dois trabalhadores com horários parecidos podem ter direitos diferentes — e estarem ambos a ser bem pagos. A empresa que conhece o seu contrato coletivo responde com segurança, e não com «pago o que a lei manda».</p>
+<p class="alert-n">Caso fictício, com as regras publicadas até 2026. Confirme sempre a versão em vigor; nas Regiões Autónomas, as portarias de extensão são dos Governos Regionais.</p>
+</div>
+
+<div class="verif">
+<p class="verif-t">Verificação dos factos</p>
+<table>
+<tr><th>Prática</th><th>Avaliação</th></tr>
+<tr><td>Confirmar o contrato coletivo e a portaria de extensão aplicáveis e aplicá-los por inteiro</td><td><span class="tag best">Recomendado</span></td></tr>
+<tr><td>Responder por escrito, com o contrato coletivo na mão e com prazo</td><td><span class="tag best">Recomendado</span></td></tr>
+<tr><td>Não pagar acréscimo noturno num bar que fecha à meia-noite, quando o contrato coletivo o afasta</td><td><span class="tag ok">Aceite</span> correto, desde que esse contrato coletivo seja o aplicável</td></tr>
+<tr><td>Pagar os feriados pela lei geral (50 %) quando o contrato coletivo manda pagar 100 %</td><td><span class="tag no">Evitar</span> aplica-se a regra do contrato coletivo</td></tr>
+<tr><td>«Não sou associado, não tenho contrato coletivo»</td><td><span class="tag no">Evitar</span> a portaria de extensão pode aplicá-lo na mesma</td></tr>
+</table>
+<p class="verif-r"><strong>Regra prática: saiba qual é o seu contrato coletivo antes de o trabalhador perguntar — e aplique-o todo.</strong></p>
+</div>
+
+  <div class="help">
+    <h2>Como ajudamos</h2>
+    <p>Identificamos o contrato coletivo e a portaria de extensão aplicáveis, comparamos salários, categorias e complementos com as tabelas em vigor e preparamos um resumo simples das regras que a empresa tem de aplicar — e a resposta a dar quando um trabalhador pergunta.</p>
+    <a class="btn" href="index.html#contacto">Pedir o diagnóstico</a>
+  </div>
+  <div class="ask">
+    <p><strong>Ficou com dúvidas sobre este assunto?</strong> Escreva-nos. Não indique o nome da empresa nem dados de trabalhadores.</p>
+    <p class="ask-links"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=contacto@colegajuda.pt&su=D%C3%BAvida%20sobre%3A%20O%20domingo%20que%20abriu%20a%20conversa&body=A%20minha%20d%C3%BAvida%3A%0A%0ASetor%20de%20atividade%3A%0AN.%C2%BA%20de%20trabalhadores%3A%0A%0A%28N%C3%A3o%20indique%20o%20nome%20da%20empresa%20nem%20dados%20pessoais%20de%20trabalhadores.%29%0A" target="_blank" rel="noopener">Gmail</a><a href="https://outlook.live.com/mail/0/deeplink/compose?to=contacto@colegajuda.pt&subject=D%C3%BAvida%20sobre%3A%20O%20domingo%20que%20abriu%20a%20conversa&body=A%20minha%20d%C3%BAvida%3A%0A%0ASetor%20de%20atividade%3A%0AN.%C2%BA%20de%20trabalhadores%3A%0A%0A%28N%C3%A3o%20indique%20o%20nome%20da%20empresa%20nem%20dados%20pessoais%20de%20trabalhadores.%29%0A" target="_blank" rel="noopener">Outlook</a><a href="mailto:contacto@colegajuda.pt?subject=D%C3%BAvida%20sobre%3A%20O%20domingo%20que%20abriu%20a%20conversa&body=A%20minha%20d%C3%BAvida%3A%0A%0ASetor%20de%20atividade%3A%0AN.%C2%BA%20de%20trabalhadores%3A%0A%0A%28N%C3%A3o%20indique%20o%20nome%20da%20empresa%20nem%20dados%20pessoais%20de%20trabalhadores.%29%0A">Programa de e-mail</a></p>
+  </div>
+  <p class="disclaimer">Caso fictício, para fins informativos. Não constitui parecer jurídico sobre casos concretos.</p>
+</div></main>
+<footer><div class="wrap">© 2026 Colegajuda · <a href="politica-privacidade.html" style="color:#c9d2dc">Política de privacidade</a></div></footer>
+</body>
+</html>
