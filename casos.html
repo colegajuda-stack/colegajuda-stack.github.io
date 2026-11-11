@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casos práticos — Colegajuda</title>
+<meta name="description" content="Situações fictícias, erros reais: o que correu mal, como evitar e como resolver.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/source-sans-3-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/source-sans-3-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/source-sans-3-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/fraunces-latin-700-normal.woff2) format('woff2')}
+:root{--navy:#1e2a38;--blue:#2f5d8a;--green:#1f7a5c;--green-soft:#e6f1ec;--ivory:#f6f4ef;--line:#e3e0d8;--muted:#4b5563;--white:#fff;--amber-soft:#fbf1df}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ivory);color:var(--navy);font-family:'Source Sans 3',system-ui,sans-serif;font-size:18px;line-height:1.6}
+a{color:var(--blue)}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:var(--ivory)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.bar img{height:44px;width:auto;display:block}
+.back{font-weight:600;color:var(--navy);text-decoration:none;font-size:16px}
+.back:hover{color:var(--green)}
+main{padding:48px 0 56px}
+.kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin:0 0 10px}
+h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,4.4vw,44px);line-height:1.15;margin:0 0 16px}
+.lead{font-size:20px;color:var(--muted);margin:0 0 36px}
+h2{font-size:21px;margin:34px 0 12px}
+ul{margin:0;padding-left:22px}
+li{margin-bottom:8px}
+.checks{list-style:none;padding:0}
+.checks li{padding-left:34px;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:20px;height:20px;border:2px solid var(--green);border-radius:5px;background:var(--white)}
+.note{font-size:16px;color:var(--muted);margin:10px 0 0}
+.law{font-size:16px;color:var(--muted);border-left:3px solid var(--line);padding-left:14px;margin-top:28px}
+.help{background:var(--green-soft);border-radius:14px;padding:22px 24px;margin-top:36px}
+.ask{margin:18px 0 0;padding:14px 16px;border:1px dashed var(--line);border-radius:12px;font-size:15px}
+.ask p{margin:0 0 8px}
+.ask-links{display:flex;flex-wrap:wrap;gap:8px;margin:0!important}
+.ask-links a{padding:6px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;color:var(--green)}
+.ask-links a:hover{border-color:var(--green)}
+.help h2{margin-top:0}
+.help p{margin:0 0 16px;color:#24433a}
+.btn{display:inline-block;background:var(--green);color:var(--white);text-decoration:none;font-weight:700;padding:12px 20px;border-radius:10px}
+.btn:hover{background:#17614a}
+.warn{background:var(--amber-soft);border-radius:10px;padding:14px 18px;margin-top:24px;font-size:16px}
+footer{background:var(--navy);color:#9aa7b5;font-size:14px;padding:22px 0 30px}
+@media (max-width:720px){body{font-size:17px}.bar img{height:38px}main{padding:36px 0 44px}}
+.list{list-style:none;padding:0;margin:0 0 8px;display:grid;gap:8px}
+.list li{margin:0;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.list li:hover{border-color:var(--green)}
+.list a.main{display:block;text-decoration:none;color:var(--navy)}
+.list strong{display:block;font-size:17px;margin-bottom:2px}
+.list span{display:block;font-size:15px;color:var(--muted)}
+.list .case-l{display:inline-block;margin-top:8px;font-size:14px;font-weight:700;color:var(--green);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a href="index.html" aria-label="Colegajuda — início"><img src="logotipo.svg" alt="Colegajuda"></a>
+  <a class="back" href="index.html">← Início</a>
+</div></header>
+<main><div class="wrap">
+  <p class="kicker">Casos práticos</p>
+  <h1>Casos práticos</h1>
+  <p class="lead">Situações fictícias, erros reais: o que correu mal, como evitar e como resolver.</p>
+  <ul class="list"><li><a class="main" href="caso-casal-dois-recibos.html"><strong>O domingo que abriu a conversa</strong><span>«Aqui nunca se pagou domingos. Pago o que a lei manda.» O dono de um bar paga bem umas coisas e mal outras — sem saber porquê.</span></a></li><li><a class="main" href="caso-mudanca-cliente-jardins.html"><strong>O cliente novo que trouxe uma trabalhadora</strong><span>A Maria ganhou um cliente novo de manutenção de jardins e, com ele, uma trabalhadora efetiva que não esperava.</span></a></li><li><a class="main" href="caso-consulta-pre-natal.html"><strong>O direito que estava afixado na parede</strong><span>Uma trabalhadora grávida trocava folgas para ir às consultas. A resposta estava afixada na parede da copa.</span></a></li><li><a class="main" href="caso-visto-formacao.html"><strong>Tem visto válido, pode trabalhar… ou não?</strong><span>Uma formanda da CPLP entregou NIF, NISS, morada, IBAN, registo criminal e um e-mail da AIMA. Faltava o essencial.</span></a></li><li><a class="main" href="caso-penhora-alimentos.html"><strong>A penhora que mudou de devedor</strong><span>Uma carta do tribunal esquecida numa secretária e uma dívida que passou do trabalhador para a empresa.</span></a></li><li><a class="main" href="caso-horario-generoso.html"><strong>O horário generoso que saiu caro</strong><span>Um patrão quis beneficiar a equipa com folgas longas e desenhou uma escala de 3 dias de trabalho e folgas alternadas, com o acordo dos trabalhadores.</span></a></li><li><a class="main" href="caso-formacao-mecanico.html"><strong>A formação que existia, mas não contava</strong><span>Um jovem mecânico aprendeu com todos os colegas durante um ano. No fim do contrato, a oficina pagou a formação «que não deu».</span></a></li><li><a class="main" href="caso-contrato-whatsapp.html"><strong>A documentação que chegou por WhatsApp de um terceiro</strong><span>Uma contratação urgente, o amigo de um colega e documentos reencaminhados pelo telemóvel.</span></a></li><li><a class="main" href="caso-contrato-marta.html"><strong>O contrato da Marta: um motivo, dois motivos ou dois contratos?</strong><span>Uma contratação de verão que parecia simples — uma trabalhadora, quatro meses, um contrato.</span></a></li></ul><p style="margin-top:18px"><a href="guia.html" style="font-weight:700;color:var(--green)">Ver o Guia de RH por temas →</a></p>
+  <p class="law">Informação geral; não constitui parecer jurídico sobre casos concretos.</p>
+</div></main>
+<footer><div class="wrap">© 2026 Colegajuda · <a href="politica-privacidade.html" style="color:#c9d2dc">Política de privacidade</a></div></footer>
+</body>
+</html>

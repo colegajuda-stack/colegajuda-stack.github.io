@@ -79,6 +79,27 @@ section{scroll-margin-top:72px}
 .env-panel{margin-top:16px;background:#2a3949;border-radius:12px;padding:18px 20px;max-width:520px}
 .env-addr{font-size:20px;font-weight:700;color:var(--ivory);margin:0 0 12px;word-break:break-all}
 .env-opts{display:flex;flex-wrap:wrap;gap:10px}
+.free{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;background:var(--green);color:#fff;border-radius:14px;padding:20px 24px;margin:34px 0 0}
+.free h3{margin:0 0 6px;font-size:21px;color:#fff}
+.free p{margin:0;max-width:640px;color:#e8f3ee}
+.free-tag{display:inline-block;background:#fff;color:var(--green);font-size:13px;font-weight:700;border-radius:999px;padding:2px 10px;margin-left:6px;vertical-align:middle}
+.free .btn{background:#fff;color:var(--green)}
+.price-note{font-size:14px;color:var(--muted);margin:14px 0 0}
+.card-btn{margin-top:14px;text-align:center}
+.card-tag{font-size:15px;font-weight:600;color:var(--green);margin:-4px 0 12px}
+.card-note{font-size:15px;color:var(--muted);margin:0 0 10px}
+.env-q{color:var(--ivory);font-weight:700;margin:0 0 10px}
+.env-motives{display:flex;flex-direction:column;gap:8px}
+.env-m{text-align:left;background:transparent;color:var(--ivory);border:2px solid #9aa7b5;border-radius:10px;padding:11px 14px;font:inherit;font-size:16px;font-weight:700;cursor:pointer}
+.env-m[aria-expanded="true"]{border-color:var(--ivory);background:#34475a}
+.env-sub{margin:2px 0 6px 12px}
+.env-sub[hidden]{display:none}
+.env-small{color:#c9d2dc;font-size:14px;margin:14px 0 0}
+.linkbtn{background:none;border:0;color:var(--ivory);text-decoration:underline;font:inherit;cursor:pointer;padding:0}
+.env-choice{padding:0 0 14px;margin:0 0 14px;border-bottom:1px solid #3d4f62}
+.env-t{color:var(--ivory);font-weight:700;font-size:17px;margin:0 0 8px}
+.env-t span{display:block;font-weight:400;font-size:14px;color:#c9d2dc}
+.env-addr{margin-top:4px}
 .env-opts a,.env-opts button{background:transparent;color:var(--ivory);border:2px solid #9aa7b5;border-radius:10px;padding:9px 14px;font:inherit;font-size:16px;font-weight:700;text-decoration:none;cursor:pointer}
 .env-opts a:hover,.env-opts button:hover{border-color:var(--ivory)}
 .hero p.hero-sub{font-size:18px;color:var(--navy);font-weight:600;margin-top:-12px}
@@ -100,6 +121,18 @@ section{scroll-margin-top:72px}
 .case-card p{color:var(--muted);font-size:16.5px;margin:0 0 12px}
 .case-card .more{margin-top:auto;font-weight:700;color:var(--green);font-size:15px}
 #casos .grid{gap:12px}
+#parceria{padding:28px 0 44px}
+.trio .card p{margin:0;color:var(--muted)}
+.trio .card.accent{background:var(--green);border-color:var(--green)}
+.trio .card.accent h3,.trio .card.accent p{color:#fff}
+.hero-tag{font-size:clamp(21px,2.6vw,27px);font-weight:600;margin:-4px 0 18px;line-height:1.4}
+.hero-tag br+*{color:var(--green)}
+.hero-lines{font-size:19px}
+.hero-goal{font-weight:700;color:var(--green)}
+.themes-t{font-size:21px;margin:8px 0 4px}
+.themes-s{color:var(--muted);margin:0 0 18px}
+.kicker{font-size:19px;max-width:760px;margin:0 0 26px;padding-left:14px;border-left:4px solid var(--green)}
+.pride{font-family:'Fraunces',Georgia,serif;font-size:clamp(20px,2.4vw,26px);line-height:1.35;max-width:760px;margin:0 0 30px}
 #casos .case-card{padding:16px 18px}
 #casos .case-card h3{font-size:18px;margin:0 0 6px}
 #casos .case-card p{font-size:15px;margin:0 0 8px}
@@ -112,10 +145,10 @@ section{scroll-margin-top:72px}
   <div class="wrap bar">
     <a href="#topo" aria-label="Colegajuda — início"><img src="logotipo.svg" alt="Colegajuda — Apoio de RH para pequenas empresas"></a>
     <nav>
+      <a href="#problema">Para quem é</a>
       <a href="#servicos">Serviços</a>
-      <a href="#como">Como funciona</a>
-      <a href="#gabinetes">Gabinetes</a>
       <a href="guia.html">Guia</a>
+      <a href="casos.html">Casos práticos</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </div>
@@ -124,18 +157,34 @@ section{scroll-margin-top:72px}
 <main id="topo">
   <div class="wrap hero">
     <h1>A retaguarda de RH que a sua empresa não tem.</h1>
-    <p>Contratações (incluindo de trabalhadores estrangeiros), contratos, faltas, férias, salários e cessações acompanhados com método — por e-mail, com prazos definidos e sem fidelização. Para empresas de 5 a 50 trabalhadores e para os gabinetes de contabilidade que trabalham com elas.</p>
-    <p class="hero-sub">Tudo preparado — minutas, procedimentos, cálculos e dossiers — para proceder em conformidade. Escolha até onde vai o nosso apoio: <a href="#servicos" style="color:var(--green)">veja as opções de serviço</a>.</p>
+    <p class="hero-tag">Apoio quando precisa, à medida do que precisa, para cumprir todas as obrigações sem tirar tempo ao seu negócio.</p>
+    <p class="hero-sub">Para PME e gabinetes de contabilidade. Prazos definidos, sem fidelização.</p>
     <div class="cta">
-      <a class="btn" href="#contacto">Pedir o diagnóstico</a>
       <a class="btn ghost" href="#servicos">Ver serviços</a>
     </div>
+    <div class="free">
+      <div>
+        <h3>Primeira análise <span class="free-tag">gratuita</span></h3>
+        <p>Responda a um breve questionário e perceba as necessidades de RH da sua empresa.</p>
+      </div>
+      <a class="btn" href="#contacto" data-open="m0">Pedir a primeira análise</a>
+    </div>
   </div>
+
+
+
+
+
+
+
 
   <section class="alt" id="problema">
     <div class="wrap">
       <h2>Para quem é</h2>
-      <p class="lead">Empresas sem técnico de RH, onde estes temas ficam com a administrativa, o gerente ou o contabilista — e só se olha para eles quando há um problema.</p>
+      <p class="lead">Empresas sem departamento de RH, onde estes temas ficam com a administrativa, o gerente ou o contabilista — e só se olha para eles quando há um problema.</p>
+      <p class="lead" style="margin-top:-20px">Gabinetes de contabilidade que precisam de dar resposta de RH aos seus clientes. Os temas de RH deixam de ocupar a equipa de contabilidade e o gabinete mantém a relação com o cliente.</p>
+      <h3 class="themes-t">Reconhece alguma destas situações?</h3>
+      <p class="themes-s">São alguns dos temas de RH em que podemos ajudar. Clique em cada um para saber mais.</p>
       <ul class="checks">
         <li><a href="tema-contratos-a-termo.html">Contratos a termo com motivos genéricos, que podem converter-se em sem termo<span class="more">Saber mais →</span></a></li>
         <li><a href="tema-faltas-ferias-suplementar.html">Faltas, férias e trabalho suplementar sem registo nem procedimento<span class="more">Saber mais →</span></a></li>
@@ -149,98 +198,71 @@ section{scroll-margin-top:72px}
       </ul>
     </div>
   </section>
-
   <section id="servicos">
     <div class="wrap">
+      <p class="kicker"><strong>Uma boa gestão de RH não é burocracia, é competitividade.</strong> Cumprir a lei evita custos e riscos; procedimentos claros poupam tempo; uma equipa bem gerida trabalha melhor. A nossa parceria tem o objetivo de fortalecer o seu negócio e aumentar a competitividade da sua empresa.</p>
       <h2>Serviços</h2>
-      <p class="lead">Comece por um diagnóstico. Depois, escolha o nível de apoio de que precisa.</p>
+      <p class="lead">Comece por um diagnóstico. Depois, escolha o nível de apoio de que precisa. Disponível para empresas e para gabinetes de contabilidade.</p>
       <div class="grid">
         <div class="card">
-          <h3>Entrada</h3>
+          <h3>Diagnóstico</h3>
+          <p class="card-tag">Riscos, prioridades e plano de ação.</p>
           <ul>
-            <li>Questionário de 20 perguntas</li>
-            <li>Mapa de riscos de 1 página</li>
-            <li>Resolução dos 2 pontos mais urgentes</li>
+            <li>Questionário completo</li>
+            <li>Mapa de riscos, com as consequências de cada um</li>
+            <li>Plano de ação com prioridades</li>
           </ul>
-          <div class="price">150–250 €, uma vez</div>
-        </div>
-        <div class="card">
-          <h3>Retaguarda mensal</h3>
-          <ul>
-            <li>Dúvidas por e-mail, resposta em 24–48 h úteis</li>
-            <li>1 procedimento ou minuta por mês</li>
-            <li>Alertas de alterações legais e de tabelas</li>
-            <li>Conferência mensal dos dados de RH</li>
-            <li>Acompanhamento dos registos obrigatórios</li>
-          </ul>
-          <div class="price">90–150 €/mês</div>
+          <div class="price">A partir de 150 €</div>
+          <a class="btn card-btn" href="#contacto" data-open="m1">Pedir diagnóstico</a>
         </div>
         <div class="card">
           <h3>À peça</h3>
+          <p class="card-tag">Execução de um trabalho concreto.</p>
+          <p class="card-note">Diga-nos o que precisa e enviamos proposta com preço fechado. Reveja os temas de RH no <a href="guia.html">Guia</a> e os <a href="casos.html">Casos práticos</a>.</p>
+          <div class="price">A partir de 50 €</div>
+          <a class="btn ghost card-btn req" href="#contacto" data-subject="Pedido de proposta: À peça">Pedir proposta</a>
+        </div>
+        <div class="card">
+          <h3>Retaguarda mensal</h3>
+          <p class="card-tag">A colega de RH a quem pode perguntar. Orientamos, a empresa faz.</p>
           <ul>
-            <li>Transmissões de trabalhadores e cessações</li>
-            <li>Contratação de estrangeiros</li>
-            <li>Revisão de vínculos para 2027</li>
-            <li>Apoio à organização de registos obrigatórios</li>
-            <li>Manual de acolhimento</li>
-            <li>Relatório Único: preparação dos dados</li>
-            <li>Preparação de comunicações</li>
+            <li>Dúvidas por e-mail, resposta em 24–48 h úteis</li>
+            <li>Orientação passo a passo para resolver cada situação</li>
+            <li>1 modelo ou minuta por mês, para adaptar</li>
+            <li>Sem fidelização</li>
           </ul>
-          <div class="price">60–200 € por trabalho</div>
+          <div class="price">A partir de 100 €/mês</div>
+          <a class="btn ghost card-btn req" href="#contacto" data-subject="Pedido de proposta: Retaguarda mensal">Pedir proposta</a>
         </div>
         <div class="card">
           <h3>RH partilhada</h3>
+          <p class="card-tag">Assumimos e acompanhamos as áreas de RH combinadas.</p>
           <ul>
             <li>Apoio de RH dedicado à empresa</li>
             <li>Executamos as tarefas de RH acordadas</li>
             <li>Avença mensal conforme o número de trabalhadores</li>
           </ul>
-          <div class="price">Valor a combinar</div>
+          <div class="price">A partir de 350 €/mês</div>
+          <a class="btn ghost card-btn req" href="#contacto" data-subject="Pedido de proposta: RH partilhada">Pedir proposta</a>
         </div>
       </div>
+      <p class="price-note">Valores sem IVA. Serviços pré-pagos. O valor de cada serviço depende da dimensão da empresa e é indicado na proposta.</p>
     </div>
   </section>
-
   <section class="alt" id="como">
     <div class="wrap">
       <h2>Como funciona</h2>
-      <p class="lead">Tudo por escrito. Uma reunião inicial, presencial ou por vídeo; depois não precisa de marcar nada.</p>
+      <p class="lead">Trabalhamos por escrito, com discrição e sem comerciais. Reuniões, presenciais ou por vídeo, opcionais.<br>
+      Do outro lado está uma equipa de RH experiente em contratação, processamento salarial, lei do trabalho e instrumentos de regulamentação coletiva (IRCT).</p>
       <div class="steps">
-        <div class="step"><b>Envie um e-mail</b><span>Com o setor de atividade, o número de trabalhadores e, se souber, o IRCT aplicável e se existe regulamento interno. Não precisa de identificar a empresa.</span></div>
-        <div class="step"><b>Responda ao questionário</b><span>Chega no mesmo dia. 20 perguntas, cerca de 20 minutos.</span></div>
-        <div class="step"><b>Receba o mapa de riscos</b><span>Em 5 dias úteis, com a ordem de prioridades.</span></div>
-        <div class="step"><b>Acompanhamos um ponto de cada vez</b><span>Cada procedimento fica escrito e pode ser usado por quem lá estiver.</span></div>
+        <div class="step"><b>Envie um e-mail</b><span>No primeiro contacto, não precisa de identificar a empresa, e os seus dados ficam protegidos.</span></div>
+        <div class="step"><b>Responda ao questionário curto</b><span>Chega no mesmo dia. Cerca de 10 perguntas gerais.</span></div>
+        <div class="step"><b>Receba a primeira análise</b><span>Por e-mail, com os pontos a que deve dar atenção. Sem custos.</span></div>
+        <div class="step"><b>Se quiser, avançamos</b><span>Para o diagnóstico completo e o nível de apoio de que precisa.</span></div>
       </div>
     </div>
   </section>
-
-  <section id="gabinetes">
-    <div class="wrap">
-      <h2>Para gabinetes de contabilidade</h2>
-      <p class="lead">Ofereça apoio de RH aos seus clientes sem contratar ninguém. Uma retaguarda para a carteira inteira, com a mesma forma de trabalhar: pedidos por e-mail, prazos definidos, procedimentos escritos.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Retaguarda para a carteira</h3>
-          <ul>
-            <li>Dúvidas de RH dos clientes do gabinete respondidas por e-mail</li>
-            <li>Procedimentos e minutas-tipo reutilizáveis</li>
-            <li>Apoio em admissões (incluindo de estrangeiros), cessações e transmissões</li>
-          </ul>
-          <div class="price">300–600 €/mês</div>
-        </div>
-        <div class="card">
-          <h3>Porque funciona</h3>
-          <ul>
-            <li>O gabinete mantém a relação com o cliente</li>
-            <li>Os temas de RH deixam de ocupar a equipa de contabilidade</li>
-            <li>Sem fidelização: renova-se mês a mês</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt" id="limites">
+  <section id="limites">
     <div class="wrap">
       <div class="note">
         <h3>O que fazemos e o que não fazemos</h3>
@@ -253,18 +275,10 @@ section{scroll-margin-top:72px}
       </div>
     </div>
   </section>
-
-  <section id="sobre">
-    <div class="wrap">
-      <h2>Quem está por trás</h2>
-      <p class="lead">Uma equipa de RH e payroll com mais de 20 anos de experiência em empresas de serviços — contratação, processamento salarial, lei do trabalho e instrumentos de regulamentação coletiva (IRCT). Trabalho discreto, por escrito, sem comerciais.</p>
-    </div>
-  </section>
-
-  <section id="casos">
+  <section class="alt" id="casos">
     <div class="wrap">
       <h2>Casos práticos</h2>
-      <p class="lead">Situações fictícias, erros reais: o que correu mal e como evitar.</p>
+      <p class="lead">Situações fictícias, erros reais: o que correu mal, como evitar e como resolver.</p>
       <div class="grid">
         <a class="card case-card" href="caso-casal-dois-recibos.html">
           <h3>O domingo que abriu a conversa</h3>
@@ -282,16 +296,20 @@ section{scroll-margin-top:72px}
           <span class="more">Ler o caso →</span>
         </a>
       </div>
-      <p style="margin-top:18px"><a href="guia.html" style="font-weight:700;color:var(--green)">Ver o Guia de RH completo →</a></p>
+      <p style="margin-top:18px"><a href="casos.html" style="font-weight:700;color:var(--green)">Ver todos os casos práticos →</a></p>
     </div>
   </section>
-
-  <section class="alt" id="forum">
+  <section class="alt" id="sobre">
+    <div class="wrap">
+      <p class="pride">Pequenas e médias na dimensão, grandes no que dão à economia portuguesa: são quase todas as empresas do país.</p>
+    </div>
+  </section>
+  <section id="forum">
     <div class="wrap forum-wrap">
       <img src="forum.svg" alt="" class="forum-ico" width="96" height="81">
       <div>
         <h2>Como nasceu a Colegajuda</h2>
-        <p class="lead">Quem trabalha em RH e payroll conhece a dúvida: a lei mudou outra vez, o IRCT foi revisto, e o pormenor que ninguém explica faz toda a diferença. Muitas vezes não há com quem confirmar se está certo ou se há uma forma melhor. A Colegajuda nasceu dessa necessidade: ter um colega da área a quem perguntar. Hoje é esse colega para as empresas sem departamento de RH; mais tarde, queremos alargar esse apoio às equipas dos nossos clientes e a outros profissionais da área, através de um fórum.</p>
+        <p class="lead">Quem trabalha em RH conhece a dúvida: a lei mudou outra vez, o IRCT foi revisto, e o pormenor que ninguém explica faz toda a diferença. Muitas vezes não há com quem confirmar se está certo ou se há uma forma melhor. A Colegajuda nasceu dessa necessidade: ter um colega da área a quem perguntar. Hoje é esse colega para as empresas sem departamento de RH; mais tarde, queremos alargar esse apoio às equipas dos nossos clientes e a outros profissionais da área, através de um fórum.</p>
         <h3 class="forum-q">Gostaria de fazer parte deste fórum?</h3>
         <p>Inscreva-se na lista de espera. Avisamos quando abrir — e as inscrições ajudam-nos a decidir os temas.</p>
         <button class="btn" type="button" id="forum-btn" aria-expanded="false" aria-controls="forum-panel">Sim, quero entrar na lista de espera</button>
@@ -310,16 +328,19 @@ section{scroll-margin-top:72px}
   <section class="contact" id="contacto">
     <div class="wrap">
       <h2>Contacto</h2>
-      <p>Envie o setor de atividade, o número de trabalhadores e, se souber, o IRCT aplicável (contrato coletivo ou portaria de extensão) e se existe regulamento interno. Não precisa de identificar a empresa nesta fase. O questionário de entrada segue no mesmo dia.</p>
+      <p>Escolha o motivo e envie-nos um e-mail.</p>
       <button class="btn env" type="button" id="env-btn" aria-expanded="false" aria-controls="env-panel"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Enviar e-mail</span></button>
       <div class="env-panel" id="env-panel" hidden>
-        <p class="env-addr">contacto@colegajuda.pt</p>
-        <div class="env-opts">
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contacto@colegajuda.pt&su=Pedido%20de%20diagn%C3%B3stico%20RH&body=Setor%20de%20atividade%3A%20%0AN.%C2%BA%20de%20trabalhadores%3A%20%0AIRCT%20aplic%C3%A1vel%20%28se%20souber%29%3A%20%0ATem%20regulamento%20interno%3F%20%28sim%2Fn%C3%A3o%29%3A%20%0A" target="_blank" rel="noopener">Gmail</a>
-          <a href="https://outlook.live.com/mail/0/deeplink/compose?to=contacto@colegajuda.pt&subject=Pedido%20de%20diagn%C3%B3stico%20RH&body=Setor%20de%20atividade%3A%20%0AN.%C2%BA%20de%20trabalhadores%3A%20%0AIRCT%20aplic%C3%A1vel%20%28se%20souber%29%3A%20%0ATem%20regulamento%20interno%3F%20%28sim%2Fn%C3%A3o%29%3A%20%0A" target="_blank" rel="noopener">Outlook</a>
-          <a href="mailto:contacto@colegajuda.pt?subject=Pedido%20de%20diagn%C3%B3stico%20RH&body=Setor%20de%20atividade%3A%20%0AN.%C2%BA%20de%20trabalhadores%3A%20%0AIRCT%20aplic%C3%A1vel%20%28se%20souber%29%3A%20%0ATem%20regulamento%20interno%3F%20%28sim%2Fn%C3%A3o%29%3A%20%0A">Programa de e-mail</a>
-          <button type="button" id="copy-btn">Copiar endereço</button>
+        <p class="env-q">Qual é o motivo?</p>
+        <div class="env-motives">
+          <button type="button" class="env-m" data-k="m0" aria-expanded="false">Pedir a primeira análise (gratuita)</button>
+          <div class="env-opts env-sub" id="m0" hidden><a href="https://mail.google.com/mail/?view=cm&fs=1&to=contacto@colegajuda.pt&su=Pedido%20de%20primeira%20an%C3%A1lise%20%28gratuita%29&body=No%20primeiro%20contacto%2C%20n%C3%A3o%20precisa%20de%20identificar%20a%20empresa%2C%20e%20os%20seus%20dados%20ficam%20protegidos.%0A%0AGostaria%20de%20receber%20o%20question%C3%A1rio%20da%20primeira%20an%C3%A1lise.%0A" target="_blank" rel="noopener">Gmail</a><a href="https://outlook.live.com/mail/0/deeplink/compose?to=contacto@colegajuda.pt&subject=Pedido%20de%20primeira%20an%C3%A1lise%20%28gratuita%29&body=No%20primeiro%20contacto%2C%20n%C3%A3o%20precisa%20de%20identificar%20a%20empresa%2C%20e%20os%20seus%20dados%20ficam%20protegidos.%0A%0AGostaria%20de%20receber%20o%20question%C3%A1rio%20da%20primeira%20an%C3%A1lise.%0A" target="_blank" rel="noopener">Outlook</a><a href="mailto:contacto@colegajuda.pt?subject=Pedido%20de%20primeira%20an%C3%A1lise%20%28gratuita%29&body=No%20primeiro%20contacto%2C%20n%C3%A3o%20precisa%20de%20identificar%20a%20empresa%2C%20e%20os%20seus%20dados%20ficam%20protegidos.%0A%0AGostaria%20de%20receber%20o%20question%C3%A1rio%20da%20primeira%20an%C3%A1lise.%0A">Programa de e-mail</a></div>
+          <button type="button" class="env-m" data-k="m1" aria-expanded="false">Pedir o diagnóstico</button>
+          <div class="env-opts env-sub" id="m1" hidden><a href="https://mail.google.com/mail/?view=cm&fs=1&to=contacto@colegajuda.pt&su=Pedido%20de%20diagn%C3%B3stico%20RH" target="_blank" rel="noopener">Gmail</a><a href="https://outlook.live.com/mail/0/deeplink/compose?to=contacto@colegajuda.pt&subject=Pedido%20de%20diagn%C3%B3stico%20RH" target="_blank" rel="noopener">Outlook</a><a href="mailto:contacto@colegajuda.pt?subject=Pedido%20de%20diagn%C3%B3stico%20RH">Programa de e-mail</a></div>
+          <button type="button" class="env-m" data-k="m2" aria-expanded="false">Outro assunto</button>
+          <div class="env-opts env-sub" id="m2" hidden><a href="https://mail.google.com/mail/?view=cm&fs=1&to=contacto@colegajuda.pt" target="_blank" rel="noopener">Gmail</a><a href="https://outlook.live.com/mail/0/deeplink/compose?to=contacto@colegajuda.pt" target="_blank" rel="noopener">Outlook</a><a href="mailto:contacto@colegajuda.pt">Programa de e-mail</a></div>
         </div>
+        <p class="env-small">Ou escreva para <strong>contacto@colegajuda.pt</strong> · <button type="button" id="copy-btn" class="linkbtn">copiar endereço</button></p>
         <p class="hint" id="copy-msg" aria-live="polite"></p>
       </div>
     </div>
@@ -344,6 +365,11 @@ section{scroll-margin-top:72px}
   });
 })();
 (function(){var b=document.getElementById('forum-btn'),p=document.getElementById('forum-panel');if(b){b.addEventListener('click',function(){var o=p.hidden;p.hidden=!o;b.setAttribute('aria-expanded',String(o));});}})();
+
+document.querySelectorAll('.env-m').forEach(function(b){b.addEventListener('click',function(){var open=b.getAttribute('aria-expanded')==='true';document.querySelectorAll('.env-m').forEach(function(x){x.setAttribute('aria-expanded','false');document.getElementById(x.dataset.k).hidden=true;});if(!open){b.setAttribute('aria-expanded','true');document.getElementById(b.dataset.k).hidden=false;}});});
+
+document.querySelectorAll('a[data-open]').forEach(function(a){a.addEventListener('click',function(){var p=document.getElementById('env-panel'),b=document.getElementById('env-btn');p.hidden=false;b.setAttribute('aria-expanded','true');document.querySelectorAll('.env-m').forEach(function(x){var on=x.dataset.k===a.dataset.open;x.setAttribute('aria-expanded',on?'true':'false');document.getElementById(x.dataset.k).hidden=!on;});});});
+document.querySelectorAll('a.req').forEach(function(a){a.addEventListener('click',function(){var subj=a.dataset.subject,to='contacto@colegajuda.pt',e=encodeURIComponent(subj);var box=document.getElementById('m2');var l=box.querySelectorAll('a');l[0].href='https://mail.google.com/mail/?view=cm&fs=1&to='+to+'&su='+e;l[1].href='https://outlook.live.com/mail/0/deeplink/compose?to='+to+'&subject='+e;l[2].href='mailto:'+to+'?subject='+e;var p=document.getElementById('env-panel'),b=document.getElementById('env-btn');p.hidden=false;b.setAttribute('aria-expanded','true');document.querySelectorAll('.env-m').forEach(function(x){x.setAttribute('aria-expanded','false');document.getElementById(x.dataset.k).hidden=true;});var m=document.querySelector('.env-m[data-k=m2]');m.setAttribute('aria-expanded','true');box.hidden=false;});});
 </script>
 </body>
 </html>
