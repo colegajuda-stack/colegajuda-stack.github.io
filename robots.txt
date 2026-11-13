@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://colegajuda.pt/sitemap.xml
