@@ -148,7 +148,7 @@ section{scroll-margin-top:72px}
 #casos .case-card h3{font-size:18px;margin:0 0 6px}
 #casos .case-card p{font-size:15px;margin:0 0 8px}
 #casos .case-card .more{font-size:14px}
-</style>
+.card-q{margin:0 0 12px;font-weight:700;font-size:16px;line-height:1.35;color:var(--navy);background:var(--green-soft);border-radius:8px;padding:8px 12px}@media(min-width:900px){.card-q{min-height:calc(1.35em*2 + 16px);display:flex;align-items:center}}.kicker-t{margin:0 0 8px}.kchecks{display:flex;flex-wrap:wrap;column-gap:28px;row-gap:4px;list-style:none;margin:0;padding:0}.kchecks li{position:relative;padding-left:24px;margin:0}.kchecks li:before{content:"✓";position:absolute;left:2px;top:0;color:var(--green);font-weight:700}.card-q{position:relative;margin-bottom:26px!important}.card-q:after{content:"";position:absolute;left:22px;bottom:-14px;width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:14px solid var(--green-soft)}#servicos .card{position:relative;margin-top:92px;overflow:visible;padding-top:36px}#servicos .card .card-q{position:absolute;left:24px;right:24px;bottom:100%;margin:0!important;min-height:0!important;z-index:2;box-shadow:0 2px 6px rgba(0,0,0,.06)}#servicos .card .card-q:after{bottom:-16px;border-top-width:16px;z-index:3}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://colegajuda.pt/#organizacao", "name": "Colegajuda", "url": "https://colegajuda.pt/", "logo": "https://colegajuda.pt/icone.png", "image": "https://colegajuda.pt/partilha.png", "email": "contacto@colegajuda.pt", "description": "Apoio de recursos humanos (RH) para pequenas e médias empresas sem departamento de RH e para gabinetes de contabilidade em Portugal.", "slogan": "A retaguarda de RH que a sua empresa não tem.", "areaServed": {"@type": "Country", "name": "Portugal"}, "knowsAbout": ["Recursos humanos", "Direito do trabalho", "Contratos de trabalho", "Segurança Social", "Processamento salarial", "Contratação coletiva", "Período experimental", "Trabalhadores estrangeiros", "Formação profissional obrigatória"]}, {"@type": "WebSite", "@id": "https://colegajuda.pt/#site", "name": "Colegajuda", "url": "https://colegajuda.pt/", "inLanguage": "pt-PT", "publisher": {"@id": "https://colegajuda.pt/#organizacao"}}]}</script>
 </head>
 <body>
@@ -212,47 +212,53 @@ section{scroll-margin-top:72px}
   </section>
   <section id="servicos">
     <div class="wrap">
-      <p class="kicker"><strong>Uma boa gestão de RH não é burocracia, é competitividade.</strong> Cumprir a lei evita custos e riscos; procedimentos claros poupam tempo; uma equipa bem gerida trabalha melhor. A nossa parceria tem o objetivo de fortalecer o seu negócio e aumentar a competitividade da sua empresa.</p>
+      <p class="kicker"><strong>Uma boa gestão de RH não é burocracia, é competitividade.</strong> A conformidade legal evita custos e riscos. Procedimentos claros poupam tempo. Uma equipa bem gerida trabalha melhor.</p>
       <h2>Serviços</h2>
-      <p class="lead">Comece por um diagnóstico. Depois, escolha o nível de apoio de que precisa. Disponível para empresas e para gabinetes de contabilidade.</p>
+      <p class="lead"><strong>De que apoio precisa?</strong> Escolha o serviço que responde à sua situação.</p>
       <div class="grid">
         <div class="card">
-          <h3>Diagnóstico</h3>
-          <p class="card-tag">Riscos, prioridades e plano de ação.</p>
-          <ul>
-            <li>Questionário completo</li>
-            <li>Mapa de riscos, com as consequências de cada um</li>
-            <li>Plano de ação com prioridades</li>
-          </ul>
-          <div class="price">A partir de 150 €</div>
-          <a class="btn card-btn" href="#contacto" data-open="m1">Pedir diagnóstico</a>
-        </div>
-        <div class="card">
+          <p class="card-q">«Tenho um caso para resolver.»</p>
           <h3>À peça</h3>
           <p class="card-tag">Execução de um trabalho concreto.</p>
-          <p class="card-note">Diga-nos o que precisa e enviamos proposta com preço fechado. Reveja os temas de RH no <a href="guia.html">Temas</a> e os <a href="casos.html">Casos práticos</a>.</p>
+          <p class="card-note">Trabalhadores estrangeiros, contratações e cessações, reclamações, notificações oficiais, registos obrigatórios, procedimentos, etc.</p>
+          <ul>
+            <li>Respondemos como podemos ajudar</li>
+            <li>Indicamos o que é caso para advogado</li>
+          </ul>
           <div class="price">A partir de 50 €</div>
           <a class="btn ghost card-btn req" href="#contacto" data-subject="Pedido de proposta: À peça">Pedir proposta</a>
         </div>
         <div class="card">
+          <p class="card-q">«Procuro apoio para questões laborais.»</p>
           <h3>Retaguarda mensal</h3>
-          <p class="card-tag">A colega de RH a quem pode perguntar. Orientamos, a empresa faz.</p>
+          <p class="card-tag">A colega de RH com quem pode contar.</p>
           <ul>
-            <li>Dúvidas por e-mail, resposta em 24–48 h úteis</li>
+            <li>Dúvidas por e-mail, resposta até 48 h</li>
             <li>Orientação passo a passo para resolver cada situação</li>
             <li>1 modelo ou minuta por mês, para adaptar</li>
-            <li>Sem fidelização</li>
           </ul>
           <div class="price">A partir de 100 €/mês</div>
           <a class="btn ghost card-btn req" href="#contacto" data-subject="Pedido de proposta: Retaguarda mensal">Pedir proposta</a>
         </div>
         <div class="card">
+          <p class="card-q">«Quero organizar o RH da empresa.»</p>
+          <h3>Diagnóstico</h3>
+          <p class="card-tag">Riscos, prioridades e plano de ação.</p>
+          <ul>
+            <li>Levantamento das práticas de RH da empresa</li>
+            <li>Mapa de RH com os riscos sinalizados</li>
+            <li>Plano de ação com prioridades</li>
+          </ul>
+          <div class="price">A partir de 150 €</div>
+          <a class="btn ghost card-btn req" href="#contacto" data-open="m1">Pedir proposta</a>
+        </div>
+        <div class="card">
+          <p class="card-q">«Preciso de reforçar a equipa nesta área.»</p>
           <h3>RH partilhada</h3>
-          <p class="card-tag">Acompanhamos as áreas de RH combinadas.</p>
+          <p class="card-tag">O RH da empresa, sem entrar nos quadros.</p>
           <ul>
             <li>Apoio de RH dedicado à empresa</li>
             <li>Executamos as tarefas de RH acordadas</li>
-            <li>Avença mensal conforme o número de trabalhadores</li>
           </ul>
           <div class="price">A partir de 350 €/mês</div>
           <a class="btn ghost card-btn req" href="#contacto" data-subject="Pedido de proposta: RH partilhada">Pedir proposta</a>
